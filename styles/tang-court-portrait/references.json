@@ -1,0 +1,39 @@
+{
+  "schema_version": "style-references-1",
+  "role": "style_reference",
+  "identity_reference": false,
+  "selection_basis": "Originals from the overall accepted and publication-authorized series; no claim every technical target passed.",
+  "preserve": [
+    "directional natural courtyard or window light",
+    "layered silk and gauze material response",
+    "restrained embroidery and warm wood relationships",
+    "coherent architectural space"
+  ],
+  "variable": [
+    "face and identity",
+    "age within the current young-adult-female demo requirement",
+    "wardrobe design and palette within the style family",
+    "scene and action",
+    "camera position and composition"
+  ],
+  "do_not_copy": [
+    "face identity",
+    "exact pose",
+    "exact composition"
+  ],
+  "usage_status": "Available original style references for future explicitly chosen reference workflows. Reference-conditioned generation has not been validated. All six archived requests were text-only; their provenance remains unchanged.",
+  "images": [
+    {
+      "id": "tang-medium-sleeve",
+      "path": "demos/scene-03/image.png",
+      "sha256": "f055d07a1645216ff3b2f9bfe7faf388f0752a4805e0a55c7e8252ac18ee7dd6",
+      "use": "Silk/gauze thickness, restrained ornament, courtyard spatial relationships. Do not inherit the cropped bun or downward gaze by default."
+    },
+    {
+      "id": "tang-medium-writing",
+      "path": "demos/scene-04/image.png",
+      "sha256": "021af65eb118182f0e04f740cdee411fbbfeb379115826e20cc0fcf262f4f5a3",
+      "use": "Window-light material response, architecture-to-garden depth and purposeful action. Historical mature casting is not the future demo casting target."
+    }
+  ]
+}

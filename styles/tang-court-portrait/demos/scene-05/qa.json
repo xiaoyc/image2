@@ -1,0 +1,20 @@
+{
+  "title": "水院听曲",
+  "planned_shot": "true-wide",
+  "observed": "Actual environmental long shot, woman about 43% height versus 42% planned. Water/bridge/columns/willows connect.",
+  "limitation": "More profile than planned three-quarter; small extra side furnishings/planted pot. 31-year-old woman submitted before new casting instruction.",
+  "image_sha256": "e8c41e3ab3ae2c590b3aead35bdcccc1bb83a1271e701f01391275c0122ce6eb",
+  "request_sha256": "b2a7c158032b5d2bc308c29a9c20adacdc7f2f29fc9abf339109ec3a8f22de69",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "calls": 1,
+  "references": [],
+  "postprocessing": "none",
+  "acceptance": {
+    "overall_batch_effect": "accepted",
+    "publication": "authorized",
+    "all_technical_targets": "not_claimed"
+  }
+}

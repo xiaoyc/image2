@@ -1,0 +1,20 @@
+{
+  "title": "廊间候友",
+  "planned_shot": "near",
+  "observed": "Waist-up male portrait; silk weave, stubble, receding corridor; crown intact.",
+  "limitation": "Added distant blurred person; face more side-oriented. Male lead predates latest young-adult-women requirement.",
+  "image_sha256": "a06b532eb5ae9e1c29d1dfca8da6b4736992d2bd24eb9484b10a121c189a8a31",
+  "request_sha256": "3769a3b1af9c2830133d47c56b356d5934791fefb821509107ec529adb5a9b15",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "calls": 1,
+  "references": [],
+  "postprocessing": "none",
+  "acceptance": {
+    "overall_batch_effect": "accepted",
+    "publication": "authorized",
+    "all_technical_targets": "not_claimed"
+  }
+}

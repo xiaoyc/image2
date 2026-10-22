@@ -1,0 +1,432 @@
+{
+  "schema_version": "style-brief-1",
+  "style_id": "amber-room-relational-study",
+  "status": "candidate",
+  "intent": "analysis_only",
+  "sources": [
+    {
+      "id": "R1",
+      "kind": "image",
+      "locator": "https://www.gonghaosnail.com/api/skill-library/files/b3e40b4b-8b9f-7073-a3ed-9fabb9da5c6d.webp",
+      "inspected": true,
+      "completeness": "full",
+      "dimensions": [
+        1664,
+        936
+      ]
+    },
+    {
+      "id": "R2",
+      "kind": "image",
+      "locator": "https://www.gonghaosnail.com/api/skill-library/files/0a0f6f2f-b7e3-450f-2a8a-b986ac723e2e.webp",
+      "inspected": true,
+      "completeness": "full",
+      "dimensions": [
+        1664,
+        936
+      ]
+    },
+    {
+      "id": "R3",
+      "kind": "image",
+      "locator": "https://www.gonghaosnail.com/api/skill-library/files/d04074c7-8cd0-b627-b6c6-d3db1e010eb4.webp",
+      "inspected": true,
+      "completeness": "full",
+      "dimensions": [
+        1664,
+        936
+      ]
+    },
+    {
+      "id": "R4",
+      "kind": "image",
+      "locator": "https://www.gonghaosnail.com/api/skill-library/files/a29dcc76-6ec3-4b5d-da60-d1d8aa038807.webp",
+      "inspected": true,
+      "completeness": "full",
+      "dimensions": [
+        1664,
+        936
+      ]
+    },
+    {
+      "id": "DESC",
+      "kind": "public_description",
+      "locator": "https://www.gonghaosnail.com/skill-library",
+      "inspected": true
+    },
+    {
+      "id": "V1",
+      "kind": "image",
+      "locator": "原创图《递信之前》第一版，2026-10-22，1672×941",
+      "inspected": true
+    },
+    {
+      "id": "P1",
+      "kind": "document",
+      "locator": "《递信之前》第一版实际提示词，2026-10-22",
+      "inspected": true
+    },
+    {
+      "id": "U1",
+      "kind": "user",
+      "locator": "本示例创作要求：富贵家庭双女性衣装分支",
+      "inspected": true
+    }
+  ],
+  "claims": [
+    {
+      "id": "AMBER-LIGHT-01",
+      "basis": "visual_observation",
+      "source_ids": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "domain": "lighting",
+      "statement": "灯及邻近表面有连续暖中间调，不是只有一块亮灯和一片黑房。",
+      "evidence": "R1金布/领口/脸；R2纸页/手/脸/椅；R3灯/桌/碗/椅；R4脸/墙/椅/木桌。",
+      "relationship": "暖亮区经材料反射与中间调连接，远层变暗仍保留距离。",
+      "scope": [
+        "detail",
+        "near",
+        "medium",
+        "wide"
+      ],
+      "retain": "有来源的局部暖灯与连续暖褐中间调。",
+      "vary": "灯形、位置与辅助环境量可变。",
+      "avoid": "全黄滤镜或简单冷暖分成两块。",
+      "confidence": "high",
+      "visible_check": "观察可见材料之间是否有亮度和色相承接；不要求每区等亮。"
+    },
+    {
+      "id": "AMBER-MAT-02",
+      "basis": "visual_observation",
+      "source_ids": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "domain": "materials",
+      "statement": "木面温润，织物、玻璃、瓷与皮肤反光可分。",
+      "evidence": "R1绣布柔褶，R2纸与木不同；R3玻璃透明/白碗不成金属；R4粗衣与椅面织锦并存。",
+      "relationship": "精致气质来自材料间差异及反光控制，不是所有材质变光滑。",
+      "scope": [
+        "detail",
+        "near",
+        "medium",
+        "wide"
+      ],
+      "retain": "维护良好的木作与可辨细节、各异反射。",
+      "vary": "粗细织物可并存；金布并非必需。",
+      "avoid": "全部粗旧褐布/磨损木面，或全部塑料亮面。",
+      "confidence": "high",
+      "counterevidence": "R4外套确有粗织纹，不得写全套只有细绸。"
+    },
+    {
+      "id": "AMBER-WEIGHT-03",
+      "basis": "visual_observation",
+      "source_ids": [
+        "R1",
+        "R4"
+      ],
+      "domain": "visual_weight",
+      "statement": "双人样片两人尺度相近，面孔与关系共同可读。",
+      "evidence": "R1两女性分居桌后，R4二男性隔圆桌，没有一个巨大近背。",
+      "relationship": "相近尺度维持旁观两人关系，而非过肩单方视点。",
+      "scope": [
+        "medium"
+      ],
+      "retain": "在双人中景分支保留相近视觉权重。",
+      "vary": "可略错位、桌形可变。",
+      "avoid": "将偏侧观察机械变成近人/椅背支配画面。",
+      "confidence": "high",
+      "conditions": "仅双人共同观察分支",
+      "excludes": [
+        "detail",
+        "单人图",
+        "用户明确要求过肩视角"
+      ]
+    },
+    {
+      "id": "AMBER-SPACE-04",
+      "basis": "visual_observation",
+      "source_ids": [
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "domain": "space",
+      "statement": "地面、桌腿、椅距与墙柜提供连续空间。",
+      "evidence": "R2桌腿至后柜，R3前椅遮挡和壁炉，R4桌腿与两椅。",
+      "relationship": "遮挡加连续地面建立距离，不靠道具数量。",
+      "scope": [
+        "medium",
+        "wide"
+      ],
+      "retain": "环境可读且家具落地。",
+      "vary": "中西房型、桌形、陈设密度可变。",
+      "avoid": "用花瓶堆积代替空间或强迫每帧左前景锚点。",
+      "confidence": "high",
+      "counterevidence": "R1更紧，不能强求全部桌脚可见。"
+    },
+    {
+      "id": "AMBER-PALETTE-05",
+      "basis": "visual_observation",
+      "source_ids": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "domain": "palette",
+      "statement": "暖调仍保留中性浅色与局部冷灰。",
+      "evidence": "R1青灰衣/白领，R2冷窗/纸，R3白碗/窗，R4左窗/白衬衣。",
+      "relationship": "光色不吞掉材料本色。",
+      "scope": [
+        "detail",
+        "near",
+        "medium",
+        "wide"
+      ],
+      "retain": "近中性米白与自然色差。",
+      "vary": "冷色比例随场景可变，不强制有窗。",
+      "avoid": "统一黄色覆膜或过强蓝橙二分。",
+      "confidence": "high"
+    },
+    {
+      "id": "AMBER-ACTION-06",
+      "basis": "visual_observation",
+      "source_ids": [
+        "R1",
+        "R2",
+        "R4"
+      ],
+      "domain": "action_mood",
+      "statement": "行为以低头、手和桌面物的关系表达。",
+      "evidence": "R1看布，R2展卷，R4双人坐姿与盒子。",
+      "relationship": "视线和间距承载关系，不靠看镜头微笑。",
+      "scope": [
+        "near",
+        "medium",
+        "wide"
+      ],
+      "retain": "有具体行为的安静观看。",
+      "vary": "人物/故事/物件可变，也可无人。",
+      "avoid": "猜测父子、遗产等未显示身份并当事实。",
+      "confidence": "high",
+      "excludes": [
+        "无人画面"
+      ]
+    },
+    {
+      "id": "AMBER-DESC-07",
+      "basis": "description",
+      "source_ids": [
+        "DESC"
+      ],
+      "domain": "scene",
+      "statement": "公开文案将横向室内、错位人物与局部灯光作为特征。",
+      "evidence": "条目公开简介，非付费包原文。",
+      "relationship": "文案可引导检查但不覆盖样片例外。",
+      "scope": [
+        "medium",
+        "wide"
+      ],
+      "retain": "横向观察与局部光组织作为候选。",
+      "vary": "圆桌/椅背并非每张具备。",
+      "avoid": "将公开描述每个名词提升为必须出现。",
+      "confidence": "high"
+    },
+    {
+      "id": "AMBER-INFER-08",
+      "basis": "inference",
+      "source_ids": [
+        "R1",
+        "R2",
+        "R4"
+      ],
+      "domain": "lighting",
+      "statement": "可用弱反射/补光来创作自然可读的脸。",
+      "evidence": "脸比仅凭小灯粗略想象更可读，但实际光路无法由图证明。",
+      "relationship": "创作方案解释可读性，不声称原图隐藏布光。",
+      "scope": [
+        "near",
+        "medium"
+      ],
+      "retain": "光面有可解释来源。",
+      "vary": "具体实现可调整。",
+      "avoid": "假报单灯照度、色温或灯位。",
+      "uncertainty": "仅创作性推断，无法确认实际隐藏光源。",
+      "confidence": "low"
+    },
+    {
+      "id": "AMBER-USER-09",
+      "basis": "user",
+      "source_ids": [
+        "U1"
+      ],
+      "domain": "identity_wardrobe",
+      "statement": "本示例创作要求：精细日常衣装符合富贵家庭设定但不夸张。",
+      "evidence": "项目示例 brief 的转述条件：精细日常衣装符合富贵家庭设定但不夸张；不是竞品原文或样片身份事实。",
+      "relationship": "衣装工艺与本示例设定的室内身份协调。",
+      "scope": [
+        "detail",
+        "near",
+        "medium",
+        "wide"
+      ],
+      "retain": "该分支用精细丝织/克制暗纹边绣。",
+      "vary": "色相、剪裁、发饰可以变化。",
+      "avoid": "粗布贫寒感或满身金饰礼服化。",
+      "conditions": "本示例指定的双女性富贵家庭分支；不作为原样片身份事实。",
+      "confidence": "high"
+    }
+  ],
+  "unresolved": [
+    "原图是否经过后期调色及具体方式未知。",
+    "材料名称为视觉近似，非实物鉴定。"
+  ],
+  "unknowns": [
+    {
+      "name": "exact_era",
+      "value": null,
+      "reason": "图像不足以可靠确定"
+    },
+    {
+      "name": "real_person_identity",
+      "value": null,
+      "reason": "图像不足以可靠确定"
+    },
+    {
+      "name": "lens_focal_length",
+      "value": null,
+      "reason": "图像不足以可靠确定"
+    },
+    {
+      "name": "aperture",
+      "value": null,
+      "reason": "图像不足以可靠确定"
+    },
+    {
+      "name": "iso",
+      "value": null,
+      "reason": "图像不足以可靠确定"
+    },
+    {
+      "name": "kelvin",
+      "value": null,
+      "reason": "图像不足以可靠确定"
+    },
+    {
+      "name": "generation_model",
+      "value": null,
+      "reason": "图像不足以可靠确定"
+    },
+    {
+      "name": "hidden_lighting_setup",
+      "value": null,
+      "reason": "图像不足以可靠确定"
+    }
+  ],
+  "matrix": [
+    {
+      "image": "R1",
+      "supports": [
+        "AMBER-LIGHT-01",
+        "AMBER-MAT-02",
+        "AMBER-WEIGHT-03"
+      ],
+      "exceptions": [
+        "长方桌",
+        "无必要大前景椅背"
+      ]
+    },
+    {
+      "image": "R2",
+      "supports": [
+        "AMBER-LIGHT-01",
+        "AMBER-SPACE-04"
+      ],
+      "exceptions": [
+        "单人",
+        "冷窗明显",
+        "无执笔证据"
+      ]
+    },
+    {
+      "image": "R3",
+      "supports": [
+        "AMBER-MAT-02",
+        "AMBER-SPACE-04"
+      ],
+      "exceptions": [
+        "无人",
+        "西式壁炉陈设"
+      ]
+    },
+    {
+      "image": "R4",
+      "supports": [
+        "AMBER-WEIGHT-03",
+        "AMBER-PALETTE-05"
+      ],
+      "exceptions": [
+        "粗织外套",
+        "不证明父子关系"
+      ]
+    }
+  ],
+  "preflight": {
+    "status": "needs_revision",
+    "case": "v1 actual prompt reviewed retrospectively",
+    "findings": [
+      {
+        "severity": "core",
+        "draft_phrase": "小宅、日常衣衫、深褐旧布外衣、旧木、不完美",
+        "mechanism_at_risk": "材料整体被推向朴旧而非温润精细",
+        "claim_ids": [
+          "AMBER-MAT-02"
+        ],
+        "minimal_change": "维护良好的暗木、细织与局部柔润面料，真实只保留少量使用痕迹。"
+      },
+      {
+        "severity": "core",
+        "draft_phrase": "局部、背光面仍暗、冷灰暮色、门洞深度、冷暖分离",
+        "mechanism_at_risk": "暖中间调承接描述不足，易形成左暖右冷区块",
+        "claim_ids": [
+          "AMBER-LIGHT-01",
+          "AMBER-PALETTE-05"
+        ],
+        "minimal_change": "明确灯—手—脸—浅领—椅面—木作中间调连续过渡，冷环境从属。"
+      },
+      {
+        "severity": "core",
+        "draft_phrase": "近侧右部、侧门口、近处左下椅背、斜向桌沿",
+        "mechanism_at_risk": "近人/近椅强化透视并压过共同观看",
+        "claim_ids": [
+          "AMBER-WEIGHT-03"
+        ],
+        "minimal_change": "双人到镜头距离相近，前景遮挡可省略，不强迫过肩。"
+      }
+    ]
+  },
+  "validation": {
+    "method": "retrospective_case_validation",
+    "cases": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "V1",
+      "P1"
+    ],
+    "limits": [
+      "已知v1结果后回顾，不是盲测。",
+      "完整性检查不验证像素或审美。",
+      "无新图生成，不保证未来提示一次收敛。"
+    ]
+  },
+  "title": "暗木灯晕·静室叙事"
+}

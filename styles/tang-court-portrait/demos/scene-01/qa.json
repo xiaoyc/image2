@@ -1,0 +1,20 @@
+{
+  "title": "窗边听雨",
+  "planned_shot": "close-up",
+  "observed": "Head/upper chest closeup, attentive face and rainy window. Skin texture visible, somewhat strong.",
+  "limitation": "Bun top cropped despite complete-hair and 6% margin requirement.",
+  "image_sha256": "10313a77ca18ab2df6807b14cae96108584692ad693aa0a4f54e34bef2f972ff",
+  "request_sha256": "ea74e12ba47e9595ac733cc41eba8836627eee83c58b78429ecedb0c888a359d",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "calls": 1,
+  "references": [],
+  "postprocessing": "none",
+  "acceptance": {
+    "overall_batch_effect": "accepted",
+    "publication": "authorized",
+    "all_technical_targets": "not_claimed"
+  }
+}

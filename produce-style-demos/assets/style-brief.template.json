@@ -1,0 +1,40 @@
+{
+  "schema_version": "style-brief-1",
+  "style_id": "FILL_STYLE_ID",
+  "status": "candidate",
+  "sources": [
+    {
+      "id": "description-01",
+      "kind": "public_description",
+      "locator": "",
+      "inspected": false
+    },
+    {
+      "id": "image-01",
+      "kind": "image",
+      "locator": "",
+      "shot": "medium",
+      "inspected": false
+    }
+  ],
+  "claims": [
+    {
+      "id": "STYLE-RELATION-001",
+      "basis": "visual_observation",
+      "source_ids": [
+        "image-01"
+      ],
+      "statement": "",
+      "evidence": "",
+      "relationship": "",
+      "scope": [
+        "medium",
+        "wide"
+      ],
+      "retain": "",
+      "vary": "",
+      "avoid": ""
+    }
+  ],
+  "unresolved": []
+}

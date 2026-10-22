@@ -1,0 +1,20 @@
+{
+  "title": "廊下归卷",
+  "planned_shot": "true-wide",
+  "observed": "Two full-body adults transfer scroll in coherent courtyard with tree and gate depth.",
+  "limitation": "Tallest figure about 64% height versus 46% target; environmental full-body/midlong rather than strict second long shot. Faces down/side. Male/mature woman cast submitted before latest instruction.",
+  "image_sha256": "f318b58d71843442b9f84ec338e2df824138c01f5f435714f67aef9af47468ac",
+  "request_sha256": "0e8c5dd3661ae84ad80f929bac2ff4c7ca746339fe8d2d06907a56a646b950e4",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "calls": 1,
+  "references": [],
+  "postprocessing": "none",
+  "acceptance": {
+    "overall_batch_effect": "accepted",
+    "publication": "authorized",
+    "all_technical_targets": "not_claimed"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "title": "阶前理袖",
+  "planned_shot": "medium",
+  "observed": "Knee-ish portrait with purposeful sleeve contact, layered red/apricot fabrics and readable yard.",
+  "limitation": "Bun grazes/crops upper frame; no 8% margin. Downward eyes less showcase-facing.",
+  "image_sha256": "f055d07a1645216ff3b2f9bfe7faf388f0752a4805e0a55c7e8252ac18ee7dd6",
+  "request_sha256": "b0e2cb753240dca8e4e769b54ac0d42c5365a016ad4f1790a159754af2ce6eea",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "calls": 1,
+  "references": [],
+  "postprocessing": "none",
+  "acceptance": {
+    "overall_batch_effect": "accepted",
+    "publication": "authorized",
+    "all_technical_targets": "not_claimed"
+  }
+}

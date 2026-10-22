@@ -1,0 +1,444 @@
+{
+  "schema_version": "demo-plan-1",
+  "id": "FILL_RUN_ID",
+  "authorization": "",
+  "total": 6,
+  "max_calls": 6,
+  "coverage": {
+    "detail": 1,
+    "near": 1,
+    "medium": 2,
+    "wide": 2
+  },
+  "bindings": {
+    "base_skill": {
+      "path": "FILL_PROJECT_RELATIVE_PATH",
+      "sha256": "FILL_ACTUAL_SHA256"
+    },
+    "style_skill": {
+      "path": "FILL_PROJECT_RELATIVE_PATH",
+      "sha256": "FILL_ACTUAL_SHA256"
+    },
+    "skin_policy": {
+      "path": "FILL_PROJECT_RELATIVE_PATH",
+      "sha256": "FILL_ACTUAL_SHA256"
+    }
+  },
+  "identity": {
+    "mode": "not_locked",
+    "description": "同一选角方向但未锁定面孔；若改用身份参考，更新全组条件和清单。",
+    "guaranteed": false
+  },
+  "protagonist": {
+    "gender": "woman",
+    "adult": true,
+    "life_stage": "young_adult",
+    "style_fit": ""
+  },
+  "references": [],
+  "scenes": [
+    {
+      "id": "scene-01",
+      "shot": "near",
+      "role": "hero",
+      "showcase": "",
+      "situation": "",
+      "space": "",
+      "action_phase": "",
+      "wardrobe_identity_relation": "",
+      "protagonist_visible": true,
+      "scope": {
+        "rendering_medium": "photoreal",
+        "visible_humans": true
+      },
+      "props": [],
+      "change_budget": {
+        "mode": "new",
+        "requested": [],
+        "changed": [],
+        "preserve": []
+      },
+      "design_checks": {
+        "style": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "framing": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "space": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "casting_wardrobe": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "props_coherence": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "action_support": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "light_material": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "change_budget": {
+          "status": "pending",
+          "evidence": ""
+        }
+      },
+      "prompt_pipeline": "manual",
+      "prompt": {
+        "path": "FILL_PROJECT_RELATIVE_PATH",
+        "sha256": "FILL_ACTUAL_SHA256"
+      },
+      "request": {
+        "path": "FILL_PROJECT_RELATIVE_PATH",
+        "sha256": "FILL_ACTUAL_SHA256"
+      },
+      "brief_mapping": {},
+      "reviewer": ""
+    },
+    {
+      "id": "scene-02",
+      "shot": "detail",
+      "role": "supporting",
+      "showcase": "",
+      "situation": "",
+      "space": "",
+      "action_phase": "",
+      "wardrobe_identity_relation": "",
+      "protagonist_visible": true,
+      "scope": {
+        "rendering_medium": "photoreal",
+        "visible_humans": true
+      },
+      "props": [],
+      "change_budget": {
+        "mode": "new",
+        "requested": [],
+        "changed": [],
+        "preserve": []
+      },
+      "design_checks": {
+        "style": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "framing": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "space": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "casting_wardrobe": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "props_coherence": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "action_support": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "light_material": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "change_budget": {
+          "status": "pending",
+          "evidence": ""
+        }
+      },
+      "prompt_pipeline": "manual",
+      "prompt": {
+        "path": "FILL_PROJECT_RELATIVE_PATH",
+        "sha256": "FILL_ACTUAL_SHA256"
+      },
+      "request": {
+        "path": "FILL_PROJECT_RELATIVE_PATH",
+        "sha256": "FILL_ACTUAL_SHA256"
+      },
+      "brief_mapping": {},
+      "reviewer": ""
+    },
+    {
+      "id": "scene-03",
+      "shot": "medium",
+      "role": "supporting",
+      "showcase": "",
+      "situation": "",
+      "space": "",
+      "action_phase": "",
+      "wardrobe_identity_relation": "",
+      "protagonist_visible": true,
+      "scope": {
+        "rendering_medium": "photoreal",
+        "visible_humans": true
+      },
+      "props": [],
+      "change_budget": {
+        "mode": "new",
+        "requested": [],
+        "changed": [],
+        "preserve": []
+      },
+      "design_checks": {
+        "style": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "framing": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "space": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "casting_wardrobe": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "props_coherence": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "action_support": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "light_material": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "change_budget": {
+          "status": "pending",
+          "evidence": ""
+        }
+      },
+      "prompt_pipeline": "manual",
+      "prompt": {
+        "path": "FILL_PROJECT_RELATIVE_PATH",
+        "sha256": "FILL_ACTUAL_SHA256"
+      },
+      "request": {
+        "path": "FILL_PROJECT_RELATIVE_PATH",
+        "sha256": "FILL_ACTUAL_SHA256"
+      },
+      "brief_mapping": {},
+      "reviewer": ""
+    },
+    {
+      "id": "scene-04",
+      "shot": "medium",
+      "role": "supporting",
+      "showcase": "",
+      "situation": "",
+      "space": "",
+      "action_phase": "",
+      "wardrobe_identity_relation": "",
+      "protagonist_visible": true,
+      "scope": {
+        "rendering_medium": "photoreal",
+        "visible_humans": true
+      },
+      "props": [],
+      "change_budget": {
+        "mode": "new",
+        "requested": [],
+        "changed": [],
+        "preserve": []
+      },
+      "design_checks": {
+        "style": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "framing": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "space": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "casting_wardrobe": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "props_coherence": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "action_support": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "light_material": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "change_budget": {
+          "status": "pending",
+          "evidence": ""
+        }
+      },
+      "prompt_pipeline": "manual",
+      "prompt": {
+        "path": "FILL_PROJECT_RELATIVE_PATH",
+        "sha256": "FILL_ACTUAL_SHA256"
+      },
+      "request": {
+        "path": "FILL_PROJECT_RELATIVE_PATH",
+        "sha256": "FILL_ACTUAL_SHA256"
+      },
+      "brief_mapping": {},
+      "reviewer": ""
+    },
+    {
+      "id": "scene-05",
+      "shot": "wide",
+      "role": "supporting",
+      "showcase": "",
+      "situation": "",
+      "space": "",
+      "action_phase": "",
+      "wardrobe_identity_relation": "",
+      "protagonist_visible": true,
+      "scope": {
+        "rendering_medium": "photoreal",
+        "visible_humans": true
+      },
+      "props": [],
+      "change_budget": {
+        "mode": "new",
+        "requested": [],
+        "changed": [],
+        "preserve": []
+      },
+      "design_checks": {
+        "style": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "framing": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "space": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "casting_wardrobe": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "props_coherence": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "action_support": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "light_material": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "change_budget": {
+          "status": "pending",
+          "evidence": ""
+        }
+      },
+      "prompt_pipeline": "manual",
+      "prompt": {
+        "path": "FILL_PROJECT_RELATIVE_PATH",
+        "sha256": "FILL_ACTUAL_SHA256"
+      },
+      "request": {
+        "path": "FILL_PROJECT_RELATIVE_PATH",
+        "sha256": "FILL_ACTUAL_SHA256"
+      },
+      "brief_mapping": {},
+      "reviewer": ""
+    },
+    {
+      "id": "scene-06",
+      "shot": "wide",
+      "role": "supporting",
+      "showcase": "",
+      "situation": "",
+      "space": "",
+      "action_phase": "",
+      "wardrobe_identity_relation": "",
+      "protagonist_visible": true,
+      "scope": {
+        "rendering_medium": "photoreal",
+        "visible_humans": true
+      },
+      "props": [],
+      "change_budget": {
+        "mode": "new",
+        "requested": [],
+        "changed": [],
+        "preserve": []
+      },
+      "design_checks": {
+        "style": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "framing": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "space": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "casting_wardrobe": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "props_coherence": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "action_support": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "light_material": {
+          "status": "pending",
+          "evidence": ""
+        },
+        "change_budget": {
+          "status": "pending",
+          "evidence": ""
+        }
+      },
+      "prompt_pipeline": "manual",
+      "prompt": {
+        "path": "FILL_PROJECT_RELATIVE_PATH",
+        "sha256": "FILL_ACTUAL_SHA256"
+      },
+      "request": {
+        "path": "FILL_PROJECT_RELATIVE_PATH",
+        "sha256": "FILL_ACTUAL_SHA256"
+      },
+      "brief_mapping": {},
+      "reviewer": ""
+    }
+  ],
+  "style_id": "FILL_STYLE_ID"
+}

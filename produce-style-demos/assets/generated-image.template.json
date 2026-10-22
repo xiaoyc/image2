@@ -1,0 +1,49 @@
+{
+  "scene_id": "scene-01",
+  "status": "generated",
+  "calls": [
+    {
+      "started_at": "",
+      "finished_at": "",
+      "tool_result_receipt": "",
+      "actual_request_sha256": ""
+    }
+  ],
+  "image": {
+    "path": "FILL_PROJECT_RELATIVE_PATH",
+    "sha256": "FILL_ACTUAL_SHA256"
+  },
+  "qa": {
+    "inspected": false,
+    "image_sha256": "",
+    "reviewer": "",
+    "actual_shot": "near",
+    "axes": {
+      "composition": {
+        "status": "uncertain",
+        "evidence": ""
+      },
+      "style": {
+        "status": "uncertain",
+        "evidence": ""
+      },
+      "brief": {
+        "status": "uncertain",
+        "evidence": ""
+      },
+      "natural_physics": {
+        "status": "uncertain",
+        "evidence": ""
+      }
+    },
+    "comparisons": []
+  },
+  "user_acceptance": {
+    "status": "pending"
+  },
+  "delivery": {
+    "status": "pending",
+    "library_file_id": "",
+    "receipt": ""
+  }
+}

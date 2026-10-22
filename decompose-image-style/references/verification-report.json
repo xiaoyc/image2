@@ -1,0 +1,48 @@
+{
+  "method": "interface_validation_plus_retrospective_visual_case_review",
+  "technical_tests": [
+    {
+      "case": "compatible_example_9_claims",
+      "passed": true
+    },
+    {
+      "case": "missing_locator",
+      "passed": true,
+      "rejection": "traceable brief source locator must contain specific text"
+    },
+    {
+      "case": "uninspected_visual",
+      "passed": true,
+      "rejection": "visual claim needs an inspected image declaration"
+    },
+    {
+      "case": "inference_without_uncertainty",
+      "passed": true,
+      "rejection": "inference uncertainty must contain specific text"
+    },
+    {
+      "case": "unknown_shot",
+      "passed": true,
+      "rejection": "claim shot scope required"
+    },
+    {
+      "case": "bad_source_id",
+      "passed": true,
+      "rejection": "claim needs valid sources"
+    },
+    {
+      "case": "duplicate_claim_id",
+      "passed": true,
+      "rejection": "duplicate claim ID"
+    }
+  ],
+  "passed": 7,
+  "total": 7,
+  "visual_review": "R1–R4 and v1 re-inspected; three mechanism deviations traced to actual prompt phrases.",
+  "limits": [
+    "Not a blind test.",
+    "Not an automated pixel-quality test.",
+    "No future output guarantee.",
+    "Template is intentionally incomplete; fill and validate before use."
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "production": "six text-only original native generations, manually authored requests; not preflight-compiled",
+  "reference_inputs": [],
+  "calls": 6,
+  "retries": 0,
+  "overall_acceptance": "overall effect accepted and publication authorized; technical deviations retained",
+  "casting_sequence": "All six were submitted before the newer young-adult-female-lead requirement. Future demo casting follows that newer instruction.",
+  "scenes": [
+    {
+      "id": "01",
+      "title": "窗边听雨",
+      "image": "scene-01/image.png",
+      "actual_request": "scene-01/actual-request.json",
+      "qa": "scene-01/qa.json"
+    },
+    {
+      "id": "02",
+      "title": "廊间候友",
+      "image": "scene-02/image.png",
+      "actual_request": "scene-02/actual-request.json",
+      "qa": "scene-02/qa.json"
+    },
+    {
+      "id": "03",
+      "title": "阶前理袖",
+      "image": "scene-03/image.png",
+      "actual_request": "scene-03/actual-request.json",
+      "qa": "scene-03/qa.json"
+    },
+    {
+      "id": "04",
+      "title": "案边校笺",
+      "image": "scene-04/image.png",
+      "actual_request": "scene-04/actual-request.json",
+      "qa": "scene-04/qa.json"
+    },
+    {
+      "id": "05",
+      "title": "水院听曲",
+      "image": "scene-05/image.png",
+      "actual_request": "scene-05/actual-request.json",
+      "qa": "scene-05/qa.json"
+    },
+    {
+      "id": "06",
+      "title": "廊下归卷",
+      "image": "scene-06/image.png",
+      "actual_request": "scene-06/actual-request.json",
+      "qa": "scene-06/qa.json"
+    }
+  ]
+}

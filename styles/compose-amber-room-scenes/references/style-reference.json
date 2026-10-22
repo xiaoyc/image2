@@ -1,0 +1,40 @@
+{
+  "role": "style_reference",
+  "path": "assets/approved-direction.png",
+  "origin": "原创双女性递信演示，基于已认可室内图编辑人物与服装",
+  "not_identity_reference": true,
+  "scope": [
+    "detail",
+    "near",
+    "medium",
+    "wide"
+  ],
+  "retain": [
+    "连续琥珀中间调",
+    "温润暗木与细织物差异",
+    "自然肤色与从属冷中性"
+  ],
+  "can_vary": [
+    "人物",
+    "衣装",
+    "场景",
+    "动作",
+    "景别",
+    "桌形"
+  ],
+  "actual_use": {
+    "03": "image reference input",
+    "04": "image reference input",
+    "01": "visual study then text only",
+    "02": "visual study then text only",
+    "05": "visual study then text only",
+    "06": "visual study then text only"
+  },
+  "limits": [
+    "不保证同脸",
+    "近远景迁移尚非稳定性验证",
+    "原图不是史实年代证据"
+  ],
+  "public_style_inspiration": "https://www.gonghaosnail.com/skill-library",
+  "competitor_pixels_in_package": false
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": "style-brief-1",
+  "style_id": null,
+  "status": "candidate",
+  "intent": "analysis_only",
+  "sources": [],
+  "claims": [],
+  "unresolved": [],
+  "unknowns": [],
+  "matrix": [],
+  "preflight": {
+    "status": "insufficient_evidence",
+    "findings": []
+  },
+  "validation": {
+    "method": "not_tested",
+    "cases": [],
+    "limits": []
+  }
+}

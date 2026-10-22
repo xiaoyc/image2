@@ -1,0 +1,20 @@
+{
+  "title": "案边校笺",
+  "planned_shot": "medium",
+  "observed": "Seated mature woman at writing table, natural attention and window-to-bamboo space. Hair intact.",
+  "limitation": "Table occludes lower body; added books/box plausible but outside tool-only brief. Brush touching/near paper not clearly several cm above. Mature casting predates latest instruction.",
+  "image_sha256": "021af65eb118182f0e04f740cdee411fbbfeb379115826e20cc0fcf262f4f5a3",
+  "request_sha256": "86068bea9bd683f3addf0e87fe8ff1d5ea2d49b979fa504487c6054348c5d0f8",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "calls": 1,
+  "references": [],
+  "postprocessing": "none",
+  "acceptance": {
+    "overall_batch_effect": "accepted",
+    "publication": "authorized",
+    "all_technical_targets": "not_claimed"
+  }
+}
