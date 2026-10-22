@@ -1,0 +1,58 @@
+{
+  "reviewed_at": "2026-10-22T05:49:03.643465+00:00",
+  "method": "视觉模型实际查看本次完整原图；参考公开方法顺序，不是上游作者意见或外部评分器。",
+  "image_sha256": "8dc477cb51c8826b3e894dc9f3f41273a09a1abab377033dce7c81305ec4b5ae",
+  "rule_map": "inputs/scene-01-rule-map.md",
+  "actual_prompt": "outputs/scene-01/actual-tool-request.json",
+  "rule_evidence": {
+    "silver.tonal_neutrality": {
+      "verdict": "not_fully_met",
+      "location": "全图及脸、暗发、浅衣",
+      "evidence": "实际图肤面过渡、暗发束和浅衣纤维仍可辨；严格无彩检查未完全达到：全图均值通道差0.830/255，单像素最大差11/255。数值只证明非严格R=G=B，不是偏色严重程度或审美评分；未调色改图。"
+    },
+    "silver.reflection": {
+      "verdict": "broadly_present",
+      "location": "眼/唇/发束、肤面与浅衣",
+      "evidence": "柔侧前光、肤面连续灰阶、暗发束、眼唇局部小亮泽和浅衣纤维可见；神态克制。"
+    },
+    "frame.casting": {
+      "verdict": "partial",
+      "location": "头脸、发型与神态",
+      "evidence": "年轻成年短bob和克制表演方向可读；发尾多至下颌而非严格齐耳。纯文本没有身份锁。"
+    },
+    "frame.moment_support": {
+      "verdict": "pass",
+      "location": "本张可见头肩/手物/支撑",
+      "evidence": "可见颈肩转向和胸前衣物遮挡自然，没有足够依据认定硬扭或长颈。手、髋、脚在画外，不宣称验证。"
+    },
+    "frame.gaze": {
+      "verdict": "pass",
+      "location": "眼睑、瞳孔方向和嘴部",
+      "evidence": "眼睛→唇/领口→斜肩可读，回头与肩线不同向形成停顿。画作提供地点，不因有画框便自动认定平衡。 大部分执行。发尾实际偏下颌长度；左后画作比“面积适中”更大，且通道较亮。严格无彩仍有微小通道差。"
+    },
+    "frame.composition": {
+      "verdict": "pass",
+      "location": "完整原生画幅",
+      "evidence": "原生上胸紧近景；裁入发冠但未切额头、五官或下颌，符合事前允许的裁切。 右侧清楚的脸与左后较大的虚化画作、明暗墙面形成不对称关系，主体仍由眼神和边缘清晰度占先；中左亮通道有竞争风险但不等于全幅失衡。"
+    },
+    "base.visual_groups": {
+      "verdict": "broadly_present",
+      "location": "全图主组、环境组与连接",
+      "evidence": "右中脸、短发、颈肩和浅领口连接成一个高兴趣主组；左侧画框与画作是另一低清晰度环境组。 眼睛→唇/领口→斜肩可读，回头与肩线不同向形成停顿。画作提供地点，不因有画框便自动认定平衡。"
+    }
+  },
+  "four_axes": {
+    "aesthetic": "基本成立；单一近景主组清楚，左画作与通道可进一步安静但非失败条件。",
+    "style": "柔侧前光、肤面连续灰阶、暗发束、眼唇局部小亮泽和浅衣纤维可见；神态克制。",
+    "brief": "大部分执行。发尾实际偏下颌长度；左后画作比“面积适中”更大，且通道较亮。严格无彩仍有微小通道差。",
+    "natural": "可见头颈肩自然。未入画手脚不适用；没有身份参考，不能称同一人。"
+  },
+  "attribution": [
+    "亮通道/画作分量大于克制背景意图，属于生成未完全遵循；“面积适中”本身也未量化。",
+    "短发方向成立，但并非严格齐耳等长；不能用美感结论替代长度执行。",
+    "严格无彩已进入实际请求，RGB余差属于生成未完全遵循；无证据说编译遗漏。"
+  ],
+  "user_acceptance": "本套Skill已被用户整体接受；不追认所有单帧细节达标。",
+  "identity_locked": false,
+  "image_reference_used": false
+}

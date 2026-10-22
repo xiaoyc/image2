@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "stage": "after",
+  "target": {
+    "file": "runs/silver-six-scenes-20261022/outputs/scene-04/original.png",
+    "sha256": "902f7ffb7e8c6b4532b80530e019f42fcc75e2694f1a4f97e8f87f3c2490fa9d"
+  },
+  "checks": {
+    "subject_weight_groups": {
+      "status": "pass",
+      "evidence": "人物、弯肘和手中杯构成主组；左下桌面/托盘为相连动作支持组，右后椅子是较暗环境组。"
+    },
+    "balance_mechanism": {
+      "status": "pass",
+      "evidence": "左下方桌面有较大形面，与中央人像通过握杯臂相接；右侧较暗房间/空椅保留情境。不以“出现杯子”自动判平衡。"
+    },
+    "viewing_connections": {
+      "status": "pass",
+      "evidence": "脸大致朝杯桌一侧→杯/托盘→手肘→身体；目光具体落杯沿无法精确确认，不能编造视线已经命中。"
+    },
+    "negative_space": {
+      "status": "pass",
+      "evidence": "后方暗桌椅与木格交代茶室，暗部并非全黑；左窗叶片细碎亮点比设计更强。"
+    },
+    "pose_and_support": {
+      "status": "pass",
+      "evidence": "握柄、杯体、托盘和弯肘关系可读，另一手落在大腿，侧髋与椅面有接触证据。杯底在托盘上方，但离托量看起来大于预设约2cm；不能从单张精确测厘米。"
+    },
+    "proportions_and_position": {
+      "status": "pass",
+      "evidence": "肩腰髋转折和腿/椅关系可读，未见明确拉长手臂或重复杯。画外小腿脚不验证。"
+    },
+    "shot_scale": {
+      "status": "pass",
+      "evidence": "原生侧坐中景，取头至膝上，发冠轻出框属于事前允许；杯和握柄手未裁掉。"
+    },
+    "light_and_color": {
+      "status": "fail",
+      "evidence": "实际图肤面过渡、暗发束和浅衣纤维仍可辨；严格无彩检查未完全达到：全图均值通道差0.568/255，单像素最大差11/255。数值只证明非严格R=G=B，不是偏色严重程度或审美评分；未调色改图。"
+    },
+    "style_identity": {
+      "status": "pass",
+      "evidence": "面部柔灰、暗发束与衣料纤维可辨，陶杯釉面小亮泽与消光衣不同；表演偏静思。 身份参考未使用；本轮短发是输入方向，不把所有黑白人像固定为这一选角。"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "reviewed_at": "2026-10-22T05:49:03.643465+00:00",
+  "method": "视觉模型实际查看本次完整原图；参考公开方法顺序，不是上游作者意见或外部评分器。",
+  "image_sha256": "902f7ffb7e8c6b4532b80530e019f42fcc75e2694f1a4f97e8f87f3c2490fa9d",
+  "rule_map": "inputs/scene-04-rule-map.md",
+  "actual_prompt": "outputs/scene-04/actual-tool-request.json",
+  "rule_evidence": {
+    "silver.tonal_neutrality": {
+      "verdict": "not_fully_met",
+      "location": "全图及脸、暗发、浅衣",
+      "evidence": "实际图肤面过渡、暗发束和浅衣纤维仍可辨；严格无彩检查未完全达到：全图均值通道差0.568/255，单像素最大差11/255。数值只证明非严格R=G=B，不是偏色严重程度或审美评分；未调色改图。"
+    },
+    "silver.reflection": {
+      "verdict": "broadly_present",
+      "location": "眼/唇/发束、肤面与浅衣",
+      "evidence": "面部柔灰、暗发束与衣料纤维可辨，陶杯釉面小亮泽与消光衣不同；表演偏静思。"
+    },
+    "frame.casting": {
+      "verdict": "partial",
+      "location": "头脸、发型与神态",
+      "evidence": "年轻成年短bob和克制表演方向可读；发尾多至下颌而非严格齐耳。纯文本没有身份锁。"
+    },
+    "frame.moment_support": {
+      "verdict": "partial",
+      "location": "本张可见头肩/手物/支撑",
+      "evidence": "握柄、杯体、托盘和弯肘关系可读，另一手落在大腿，侧髋与椅面有接触证据。杯底在托盘上方，但离托量看起来大于预设约2cm；不能从单张精确测厘米。"
+    },
+    "frame.gaze": {
+      "verdict": "partial",
+      "location": "眼睑、瞳孔方向和嘴部",
+      "evidence": "脸大致朝杯桌一侧→杯/托盘→手肘→身体；目光具体落杯沿无法精确确认，不能编造视线已经命中。 握杯、弯肘、腿上松手、杯在托盘上方执行；离托高度更高，视线精确目标不确定，增加了远处小枝叶。"
+    },
+    "frame.composition": {
+      "verdict": "pass",
+      "location": "完整原生画幅",
+      "evidence": "原生侧坐中景，取头至膝上，发冠轻出框属于事前允许；杯和握柄手未裁掉。 左下方桌面有较大形面，与中央人像通过握杯臂相接；右侧较暗房间/空椅保留情境。不以“出现杯子”自动判平衡。"
+    },
+    "base.visual_groups": {
+      "verdict": "broadly_present",
+      "location": "全图主组、环境组与连接",
+      "evidence": "人物、弯肘和手中杯构成主组；左下桌面/托盘为相连动作支持组，右后椅子是较暗环境组。 脸大致朝杯桌一侧→杯/托盘→手肘→身体；目光具体落杯沿无法精确确认，不能编造视线已经命中。"
+    }
+  },
+  "four_axes": {
+    "aesthetic": "人物—杯—桌的关系基本成立，背景用途可读；窗外碎亮叶可更克制。",
+    "style": "面部柔灰、暗发束与衣料纤维可辨，陶杯釉面小亮泽与消光衣不同；表演偏静思。",
+    "brief": "握杯、弯肘、腿上松手、杯在托盘上方执行；离托高度更高，视线精确目标不确定，增加了远处小枝叶。",
+    "natural": "坐姿支撑与手物关系大体合理；不因杯高偏差断言物理错误。"
+  },
+  "attribution": [
+    "杯底刚离托约2cm已写prompt，实际相对杯高的离托量偏大，归为动作细节未完全遵循。",
+    "窗口较碎亮且背景加入小枝叶，属于生成对简洁环境约束的偏离；不自动判整个构图失败。",
+    "严格无彩已进入实际请求，RGB余差属于生成未完全遵循；无证据说编译遗漏。"
+  ],
+  "user_acceptance": "本套Skill已被用户整体接受；不追认所有单帧细节达标。",
+  "identity_locked": false,
+  "image_reference_used": false
+}

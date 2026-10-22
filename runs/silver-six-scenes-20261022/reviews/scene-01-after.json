@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "stage": "after",
+  "target": {
+    "file": "runs/silver-six-scenes-20261022/outputs/scene-01/original.png",
+    "sha256": "8dc477cb51c8826b3e894dc9f3f41273a09a1abab377033dce7c81305ec4b5ae"
+  },
+  "checks": {
+    "subject_weight_groups": {
+      "status": "pass",
+      "evidence": "右中脸、短发、颈肩和浅领口连接成一个高兴趣主组；左侧画框与画作是另一低清晰度环境组。"
+    },
+    "balance_mechanism": {
+      "status": "pass",
+      "evidence": "右侧清楚的脸与左后较大的虚化画作、明暗墙面形成不对称关系，主体仍由眼神和边缘清晰度占先；中左亮通道有竞争风险但不等于全幅失衡。"
+    },
+    "viewing_connections": {
+      "status": "pass",
+      "evidence": "眼睛→唇/领口→斜肩可读，回头与肩线不同向形成停顿。画作提供地点，不因有画框便自动认定平衡。"
+    },
+    "negative_space": {
+      "status": "pass",
+      "evidence": "左后展墙/通道交代美术馆，右侧中灰墙安静；不是毫无功能的空白。"
+    },
+    "pose_and_support": {
+      "status": "pass",
+      "evidence": "可见颈肩转向和胸前衣物遮挡自然，没有足够依据认定硬扭或长颈。手、髋、脚在画外，不宣称验证。"
+    },
+    "proportions_and_position": {
+      "status": "pass",
+      "evidence": "头肩透视连贯，近侧肩较大可由机位解释；不能从胸上截幅反演站姿全身承重。"
+    },
+    "shot_scale": {
+      "status": "pass",
+      "evidence": "原生上胸紧近景；裁入发冠但未切额头、五官或下颌，符合事前允许的裁切。"
+    },
+    "light_and_color": {
+      "status": "fail",
+      "evidence": "实际图肤面过渡、暗发束和浅衣纤维仍可辨；严格无彩检查未完全达到：全图均值通道差0.830/255，单像素最大差11/255。数值只证明非严格R=G=B，不是偏色严重程度或审美评分；未调色改图。"
+    },
+    "style_identity": {
+      "status": "pass",
+      "evidence": "柔侧前光、肤面连续灰阶、暗发束、眼唇局部小亮泽和浅衣纤维可见；神态克制。 身份参考未使用；本轮短发是输入方向，不把所有黑白人像固定为这一选角。"
+    }
+  }
+}

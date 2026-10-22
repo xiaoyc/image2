@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "stage": "before",
+  "target": {
+    "file": "runs/silver-window-demo-01/inputs/demo-01.json",
+    "sha256": "a7d5aae328571f737d9a83d51f8783ab13f8ae33bc9ebeba7c6cb1d3c1ba388a"
+  },
+  "checks": {
+    "subject_weight_groups": {
+      "status": "pass",
+      "evidence": "近中央深发、脸、双肩与哑衣为相连单主组；不把衣领或发髻单独算另一边配重。窄窗边/灰墙仅为弱环境组。"
+    },
+    "balance_mechanism": {
+      "status": "pass",
+      "evidence": "采用近居中凝聚，肩线轻微前后转动形成自然变化；不为左右等重添加道具。左窗窄边亮度受控，不复制一边人另一边大白窗。"
+    },
+    "viewing_connections": {
+      "status": "pass",
+      "evidence": "主落点双眼与镜头相连，次落点是唇/发束的细亮泽和棉领的消光纹理；不是行动道具场景，无需伪造三件道具的回路。"
+    },
+    "negative_space": {
+      "status": "pass",
+      "evidence": "胸上肖像的灰墙与窄窗边承担光源提示、空间渐层与肩头呼吸；本套简洁环境是有意取舍，不沿用奶杏庭院的生活物件要求。"
+    },
+    "pose_and_support": {
+      "status": "pass",
+      "evidence": "自然站立轻转头回镜头，肩颈放松、下巴不抬、可见肩线协调。双手/髋脚在画外，本帧不以不可见支撑宣称通过；实际后检只核可见颈肩与转动。"
+    },
+    "proportions_and_position": {
+      "status": "pass",
+      "evidence": "胸上近景，头肩与颈长自然，眼平透视，头顶留余；不以小脸或长颈制造不自然时装比例。"
+    },
+    "shot_scale": {
+      "status": "pass",
+      "evidence": "本次原生胸上近景，16:9，拟与公开第一张同类胸上肖像比较；出图后按真实截幅复核，不裁切旧图当特写。"
+    },
+    "light_and_color": {
+      "status": "pass",
+      "evidence": "固定中性银灰，左前宽柔窗主光，亮侧/阴侧平滑但保留体积；清楚眼神和眼唇发局部高光，对照哑织与柔哑肤面。不加奶杏暖色、强逆光或复古偏色。 我方细化：看深发/暗墙是否可辨、肤面中间灰是否连续、浅衣纹理是否保留，主体和背景是否分离。"
+    },
+    "style_identity": {
+      "status": "pass",
+      "evidence": "保持中性单色、窗光塑型与反射差异。新人物、低髻、无领外套/棉立领、居中布局与灰泥窄窗室内区别于竞品样片；没有竞品图输入。 并列核对灰阶体积与局部光泽/消光反射差异，不以单纯黑白输出替代；自然肤理保留。"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "stage": "before",
+  "target": {
+    "file": "runs/silver-window-demo-02/inputs/demo-02.json",
+    "sha256": "cda8d1453dd42aac67c936ed41b774205a2d9065deb2af73be8ae6254f913c19"
+  },
+  "checks": {
+    "subject_weight_groups": {
+      "status": "pass",
+      "evidence": "近中央单一人物组包含脸、发、颈肩和衣料，不将局部高光计成独立配重；画外窗不生成新的高亮组。"
+    },
+    "balance_mechanism": {
+      "status": "pass",
+      "evidence": "采用集中式平衡而非强行左侧配物，双肩向下自然展开，左右灰墙以不同柔暗梯度支持轮廓。实际是否成立必须等出图看。"
+    },
+    "viewing_connections": {
+      "status": "pass",
+      "evidence": "眼睛为主落点，脸部鼻唇的体积和局部亮泽连接深发，颈部和棉领把视线导向哑织物；无需叙事道具。"
+    },
+    "negative_space": {
+      "status": "pass",
+      "evidence": "头顶明确保留约8%灰墙，左右留白说明空间、光源及人物边缘，不用白窗填满画面。非生活场景无需硬加物件。"
+    },
+    "pose_and_support": {
+      "status": "pass",
+      "evidence": "静态时装停顿，肩颈舒展、头轻转而不歪头，视线专注，嘴角中性；不将多动作叠成所谓气场。手脚画外，本次不声称全身承重已验。"
+    },
+    "proportions_and_position": {
+      "status": "pass",
+      "evidence": "头部约六成画高，完整发顶和肩线，略修长自然眼型不扩大眼球或拉长颈部；表演取舍不依赖生理夸张。"
+    },
+    "shot_scale": {
+      "status": "pass",
+      "evidence": "计划16:9原生胸上近景，头顶留可见空间；后检核实际截幅及完整头发，不能按计划标签冒充实现。"
+    },
+    "light_and_color": {
+      "status": "pass",
+      "evidence": "保留银灰连续中间调、侧前柔光体积、发和墙暗部细节及浅衣纹理；窗口移到画外，不能用全脸压黑制造冷峻。"
+    },
+    "style_identity": {
+      "status": "pass",
+      "evidence": "并列检查灰阶体积、眼唇发局部光泽对照哑织物，以及本套新增选角/表演：利落成年轮廓、稳定目光、中性嘴角与克制舒展姿态。冷峻为用户方向，不冒充公开description、不外推所有黑白风格。"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "base": {
+    "name": "base-image-production",
+    "version": "0.3.3"
+  },
+  "style": {
+    "id": "silver-window",
+    "name": "银息柔映 · 中性灰时装肖像",
+    "version": "0.2.0"
+  },
+  "style_research_provenance": {
+    "page_url": "https://gonghaosnail.com/skill-library",
+    "competitor_title": "银灰柔窗·黑白光泽肖像",
+    "use": "公开描述和公开样片仅用于研究银灰影调、侧前柔窗光与局部光泽规律；没有取得付费Skill或原始提示词，竞品图片不进入生成输入。",
+    "original_development": "基于原封不动的image2 base0.3.3和编译器另建薄扩展；不继承奶杏色光。人像、发型、衣装、场景与布局由原创输入重设。",
+    "operational_additions": "黑位保留、肤面过渡、浅衣高光控制、主体背景分离及双核心检查是我方依据公开美术特征和用户要求做的操作细化，不冒充公开description原文。",
+    "casting_origin": "用户对首张的审美反馈及修订要求，属于我方本版选角/表演方向；不冒充竞品公开description原文或真实人物性格判断。"
+  },
+  "input_images": [],
+  "image_count_requested": 1,
+  "mode": "generate",
+  "execution_status": "assembled_only",
+  "network_calls": 0,
+  "generation_performed_by_script": false,
+  "reference_bytes_verified": false,
+  "input_image_record_scope": "declared inputs for a future image-tool call, not evidence that such a call occurred; SHA256 checks byte identity, not authorship",
+  "prompt_sha256": "1b4bff38766cdfb324691323eefcfb563d8234e3ae5e5ee6b65521853c9cdcaf",
+  "review_methods": {
+    "before_gate": "生成前对当前输入逐项写具体设计证据和 pass/fail/not_applicable，完整覆盖九项检查。先合并重量组，再说明采用何种平衡与观看路线。任一 fail 均停止本次生成，改设计并重新审查；结构校验通过不代表审美自动通过。",
+    "after_gate": "实际看未裁切原图独立写九项证据，不照抄前检或提示词。必要结构无法辨认或明确目标未达成才记fail；出画、面积大、合理背景人物或有优化空间不是自动失败。分别判断基础质量、方案取舍、风格与用户验收。失败可按要求交付，不自动重试。",
+    "subject_weight_groups": "按邻近、相似和实际连接合并感知重量组；记录各组面积、明暗、清晰度与信息密度。不把贴身道具重复计算为独立配重。 透明材质不能按同面积不透明块计算；背景人物按实际尺度、对比和清晰度判断。",
+    "balance_mechanism": "说明居中、不对称或有意偏置如何服务主题，凭真实重量关系判断。小色点或模糊背景不自动平衡大而清楚的主体，不机械要求两侧对称或补物。",
+    "viewing_connections": "沿手、视线、轮廓、结构线或色彩呼应检查观看路线及情境关系；物件出现不等于连接成立，不能仅列道具。 记录实际第一、第二及如适用的第三落点；这是视觉观察，不是眼动测量，单锚画面无需凑足三点。",
+    "negative_space": "指出留白的气氛、方向、动作余量、尺度或叙事角色；检查它是否把有关元素割裂，或只是无目的空区。 环境叙事有要求时检查层级、次级日常活动是否可读且弱于主体，空白或填满都不自动通过。",
+    "pose_and_support": "核对手与物、骨盆与座面、脚与地面的接触和受力；动作在正常可及范围，转动、重心和支撑有可见依据。 分别记录物理是否成立、动作阶段是否可读、自然程度是否符合本次目标；没有畸形不等于自然，残余展示感要有像素证据，不能自动等同畸形或机械判fail。",
+    "proportions_and_position": "即使没有明确解剖畸形，也需检查头身、腰胯膝、躯干与腿的转折、截幅和主体位置是否协调，不能用细节漂亮替代整体比例。",
+    "shot_scale": "以实际身体截幅、主体占比及环境占比判断原生景别，不以提示词标签代替；不裁切旧图冒充新的原生景别。",
+    "light_and_color": "查看光向、面部可读性、色彩面积与局部对比是否符合本次风格，并服务而非破坏视觉层级。 比较主色、次色与点缀实际占据的面积、邻接颜色和位置，不按色彩类别预设高低分，也不因柔光就强加硬光。",
+    "style_identity": "风格和人物身份分别记录证据，不用身份相似掩盖构图失败；参考身份不锁旧衣服、道具、取景或场景。",
+    "evidence_boundaries": "九项记录对应 before/after 阶段，分别绑定本次输入或实际输出的文件摘要。文本组装、工具返回、实际看图与用户确认分别记录；结构测试不打美学分数，不自动批准图片，不覆盖历史失败案例。"
+  },
+  "design_review": {
+    "target": {
+      "file": "runs/silver-six-scenes-20261022/inputs/scene-05.json",
+      "sha256": "044c496628613a7421cac89fdacdc7c023aedb39eb88add961411ce07d85736e"
+    },
+    "summary": {
+      "structure_valid": true,
+      "stage": "before",
+      "declared_outcome": "pass",
+      "failed_checks": [],
+      "generation_gate": "declared_pass",
+      "delivery_instruction": "This record does not authorize generation or delivery and is not user approval.",
+      "automatic_retry": false,
+      "visual_quality_automatically_evaluated": false,
+      "target_bytes_verified": true,
+      "validation_scope": "record completeness and declared statuses only; evidence truth and aesthetic decisions require actual human or visual-model review"
+    },
+    "record_sha256": "990068925d76f9793a08af271ef9f15294aedfb22539a4aac7aafb0a18858b57"
+  },
+  "validation_scope": "schema, local byte verification when run via CLI, and deterministic assembly only; not visual quality, identity consistency, or complete semantic validation"
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "stage": "after",
+  "target": {
+    "file": "runs/silver-six-scenes-20261022/outputs/scene-06/original.png",
+    "sha256": "f4423a6c7ed0af8a4752e11a6d5f5bcf7d6e2e3bf7648924983d6ac57e516b0d"
+  },
+  "checks": {
+    "subject_weight_groups": {
+      "status": "pass",
+      "evidence": "左侧脸/短发/颈肩/浅衣与座椅相连为主组，右侧窗口为中灰环境与凝视空间。"
+    },
+    "balance_mechanism": {
+      "status": "pass",
+      "evidence": "左侧高兴趣清楚面部，对侧较亮但虚化窗景承接目光；座椅深面框住脸，不需硬加道具配重。"
+    },
+    "viewing_connections": {
+      "status": "pass",
+      "evidence": "清楚眼神向窗外→圆角窗框→肩线与椅背回到脸。窗外是模糊建筑，不制造重复人脸反射。"
+    },
+    "negative_space": {
+      "status": "pass",
+      "evidence": "右窗和远处环境说明列车旅行语境，并服务凝视方向；不是无目的空背景。"
+    },
+    "pose_and_support": {
+      "status": "pass",
+      "evidence": "后肩与椅背贴靠、头颈小幅侧转可读；没有明显长颈/硬扭。手脚画外不验证。嘴唇实际轻启，不能称轻合已兑现。"
+    },
+    "proportions_and_position": {
+      "status": "pass",
+      "evidence": "近远眼/颊和肩部透视连贯，未见足够证据判拉伸；衣领与外套叠压自然。"
+    },
+    "shot_scale": {
+      "status": "pass",
+      "evidence": "原生上胸近景，发冠裁入在事前允许范围内，额头、五官、下颌与颈肩可读。"
+    },
+    "light_and_color": {
+      "status": "fail",
+      "evidence": "实际图肤面过渡、暗发束和浅衣纤维仍可辨；严格无彩检查未完全达到：全图均值通道差0.703/255，单像素最大差13/255。数值只证明非严格R=G=B，不是偏色严重程度或审美评分；未调色改图。"
+    },
+    "style_identity": {
+      "status": "pass",
+      "evidence": "暗发细节、肤面灰阶和眼/唇小亮泽相对哑织物成立；神态偏沉静而非很强硬的冷面。 身份参考未使用；本轮短发是输入方向，不把所有黑白人像固定为这一选角。"
+    }
+  }
+}

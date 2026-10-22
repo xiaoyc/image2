@@ -1,0 +1,26 @@
+{
+  "schema_version": "published-image-1",
+  "file": "original.png",
+  "sha256": "f4423a6c7ed0af8a4752e11a6d5f5bcf7d6e2e3bf7648924983d6ac57e516b0d",
+  "native_resolution": [
+    1672,
+    941
+  ],
+  "pixel_neutrality_fact": {
+    "mean_RGB": [
+      124.4969377481962,
+      123.79353571228816,
+      123.97058954385287
+    ],
+    "full_image_mean_channel_spread": 0.7034020359080415,
+    "max_pixel_channel_spread": 13,
+    "exact_gray_pixel_fraction": 0.16052860389791984,
+    "not_an_aesthetic_score": true
+  },
+  "mode": "text-only",
+  "image_inputs": [],
+  "identity_locked": false,
+  "image_postprocessed": false,
+  "source": "Existing original output record; no new generation during publication.",
+  "limits": "Hashes identify bytes; recorded pixel statistics are not aesthetic scores."
+}

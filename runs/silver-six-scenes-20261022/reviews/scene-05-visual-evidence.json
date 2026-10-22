@@ -1,0 +1,58 @@
+{
+  "reviewed_at": "2026-10-22T05:49:03.643465+00:00",
+  "method": "视觉模型实际查看本次完整原图；参考公开方法顺序，不是上游作者意见或外部评分器。",
+  "image_sha256": "391bfec88b647f01d9ab2a865cf5ccecba92f789bd91041e0e976af9fffd6d91",
+  "rule_map": "inputs/scene-05-rule-map.md",
+  "actual_prompt": "outputs/scene-05/actual-tool-request.json",
+  "rule_evidence": {
+    "silver.tonal_neutrality": {
+      "verdict": "not_fully_met",
+      "location": "全图及脸、暗发、浅衣",
+      "evidence": "实际图肤面过渡、暗发束和浅衣纤维仍可辨；严格无彩检查未完全达到：全图均值通道差0.494/255，单像素最大差6/255。数值只证明非严格R=G=B，不是偏色严重程度或审美评分；未调色改图。"
+    },
+    "silver.reflection": {
+      "verdict": "broadly_present",
+      "location": "眼/唇/发束、肤面与浅衣",
+      "evidence": "灰阶与柔面光、浅衣细纹成立；环境直射斑/亮窗比安静柔光计划强，全身眼唇反射只能粗看。"
+    },
+    "frame.casting": {
+      "verdict": "partial",
+      "location": "头脸、发型与神态",
+      "evidence": "年轻成年短bob和克制表演方向可读；发尾多至下颌而非严格齐耳。纯文本没有身份锁。"
+    },
+    "frame.moment_support": {
+      "verdict": "partial",
+      "location": "本张可见头肩/手物/支撑",
+      "evidence": "前脚有落地阴影，后脚也近地，臂自然下垂微摆。但双腿交叠较窄，后脚“跟抬、前掌留地”的具体短步阶段不能充分确认。自然步未确认通过，不据此判畸形。"
+    },
+    "frame.gaze": {
+      "verdict": "pass",
+      "location": "眼睑、瞳孔方向和嘴部",
+      "evidence": "脸向左窗一侧、身体向前；摆臂和前脚可读，地缝/廊柱回引主体。观看方向与行进方向可以不同，并不强迫一致。 短发与行走方向落实，但人物比例更大、窄交叠步态不完全是预设轻小步；未锁身份。"
+    },
+    "frame.composition": {
+      "verdict": "partial",
+      "location": "完整原生画幅",
+      "evidence": "全身、鞋底完整，人物实际约九成画高，高于计划约四分之三；身周空间与预设不完全一致。 人物较清楚，右侧走廊远端较简洁；柱线和地缝引向身体与足部。右侧空间主要承担建筑纵深，不冒称它就是眼睛的凝视方向。"
+    },
+    "base.visual_groups": {
+      "verdict": "broadly_present",
+      "location": "全图主组、环境组与连接",
+      "evidence": "左中脸/身躯/摆臂和交叠腿形成一个动态主组；窗柱重复面与右侧走廊构成环境组。 脸向左窗一侧、身体向前；摆臂和前脚可读，地缝/廊柱回引主体。观看方向与行进方向可以不同，并不强迫一致。"
+    }
+  },
+  "four_axes": {
+    "aesthetic": "建筑动线和单主体关系基本成立；步伐仍有时装走秀感，作为自然瞬间的强度较弱。",
+    "style": "灰阶与柔面光、浅衣细纹成立；环境直射斑/亮窗比安静柔光计划强，全身眼唇反射只能粗看。",
+    "brief": "短发与行走方向落实，但人物比例更大、窄交叠步态不完全是预设轻小步；未锁身份。",
+    "natural": "没有明确漂浮或骨骼畸形证据；仍不能把“看起来在走”当精确支撑阶段完成。"
+  },
+  "attribution": [
+    "自然小步/前后足阶段有文字但像素证据不足，记为未确认，不自动改写为完全通过。",
+    "人物占比和较强亮窗偏离明确输入。",
+    "严格无彩已进入实际请求，RGB余差属于生成未完全遵循；无证据说编译遗漏。"
+  ],
+  "user_acceptance": "本套Skill已被用户整体接受；不追认所有单帧细节达标。",
+  "identity_locked": false,
+  "image_reference_used": false
+}

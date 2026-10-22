@@ -1,0 +1,57 @@
+{
+  "reviewed_at": "2026-10-22T05:49:03.643465+00:00",
+  "method": "视觉模型实际查看本次完整原图；参考公开方法顺序，不是上游作者意见或外部评分器。",
+  "image_sha256": "26189dde1e7110adc400559d774eef15fa456247b245e7820bed653fae45d088",
+  "rule_map": "inputs/scene-02-rule-map.md",
+  "actual_prompt": "outputs/scene-02/actual-tool-request.json",
+  "rule_evidence": {
+    "silver.tonal_neutrality": {
+      "verdict": "not_fully_met",
+      "location": "全图及脸、暗发、浅衣",
+      "evidence": "实际图肤面过渡、暗发束和浅衣纤维仍可辨；严格无彩检查未完全达到：全图均值通道差0.505/255，单像素最大差13/255。数值只证明非严格R=G=B，不是偏色严重程度或审美评分；未调色改图。"
+    },
+    "silver.reflection": {
+      "verdict": "broadly_present",
+      "location": "眼/唇/发束、肤面与浅衣",
+      "evidence": "脸光柔和、头发暗部可辨、浅织物纤维和小亮泽成立；低头工作较沉静，不是强直视冷面。"
+    },
+    "frame.casting": {
+      "verdict": "partial",
+      "location": "头脸、发型与神态",
+      "evidence": "年轻成年短bob和克制表演方向可读；发尾多至下颌而非严格齐耳。纯文本没有身份锁。"
+    },
+    "frame.moment_support": {
+      "verdict": "pass",
+      "location": "本张可见头肩/手物/支撑",
+      "evidence": "右手握笔、左手压纸、纸贴桌；肩颈轻前倾且手腕未见明确反折。一侧椅面和髋部接触可读，桌沿遮部分前髋；脚画外不验证。"
+    },
+    "frame.gaze": {
+      "verdict": "pass",
+      "location": "眼睑、瞳孔方向和嘴部",
+      "evidence": "低头视线→铅笔尖/右手→压纸左手和桌沿可读，笔尖实接图纸而非空悬。 握笔/压纸落实；台面和后景模型/材料比预设更多，支撑不是无遮挡全显；严格无彩有微小残差。"
+    },
+    "frame.composition": {
+      "verdict": "pass",
+      "location": "完整原生画幅",
+      "evidence": "原生坐姿中景，头至大腿/膝上附近，接触动作和部分座面在画内，符合本次景别。 人物位于中左，向右下延展的纸面和斜桌沿通过双手回接人物；亮纸面积大但有功能。左窗亮度和后方格架细节略竞争。"
+    },
+    "base.visual_groups": {
+      "verdict": "broadly_present",
+      "location": "全图主组、环境组与连接",
+      "evidence": "头脸、浅外套、前臂与压纸/握笔双手相连为主组；近桌和图纸是动作对象而非独立对侧配重。 低头视线→铅笔尖/右手→压纸左手和桌沿可读，笔尖实接图纸而非空悬。"
+    }
+  },
+  "four_axes": {
+    "aesthetic": "基本成立，动作对象与主体连接明确；亮窗/前景纸面较强是主次优化项。",
+    "style": "脸光柔和、头发暗部可辨、浅织物纤维和小亮泽成立；低头工作较沉静，不是强直视冷面。",
+    "brief": "握笔/压纸落实；台面和后景模型/材料比预设更多，支撑不是无遮挡全显；严格无彩有微小残差。",
+    "natural": "真实操作关系和坐姿大体可读；遮挡部位不作完整身体通过声明。"
+  },
+  "attribution": [
+    "环境繁度大于“少量材料/不摆满工具”的计划，属于生成偏差，仍需按实际主次而非物件数量评审。",
+    "严格无彩已进入实际请求，RGB余差属于生成未完全遵循；无证据说编译遗漏。"
+  ],
+  "user_acceptance": "本套Skill已被用户整体接受；不追认所有单帧细节达标。",
+  "identity_locked": false,
+  "image_reference_used": false
+}

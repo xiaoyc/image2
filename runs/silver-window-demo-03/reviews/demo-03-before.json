@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "stage": "before",
+  "target": {
+    "file": "runs/silver-window-demo-03/inputs/demo-03.json",
+    "sha256": "87803861c64234849ae27474017d7c4f1333593dd78f148f9e602567b726b8ea"
+  },
+  "checks": {
+    "subject_weight_groups": {
+      "status": "pass",
+      "evidence": "深发、脸、颈肩、衣料为单一近景组，局部反光不重复算配重。没有独立道具，也不强加道具。"
+    },
+    "balance_mechanism": {
+      "status": "pass",
+      "evidence": "主组略偏左中，身体侧向和目光右向形成不对称张力，右侧灰空间承接目光；无需凭空放物。后检看实际关系是否实现，不按人物坐标自动通过。"
+    },
+    "viewing_connections": {
+      "status": "pass",
+      "evidence": "首落点眼睛，向右画外对象的凝视经回转的头颈与肩线回到人物，再到唇/发局部反光和哑衣料。具体呼唤事件只是设计，后检只评价可见停顿与方向。"
+    },
+    "negative_space": {
+      "status": "pass",
+      "evidence": "右侧留白承接视线和距离感；无须填满。预先允许少量发顶出画，额头五官下颌不裁，不能事后拿该新意图修改旧0.2留白失败。"
+    },
+    "pose_and_support": {
+      "status": "pass",
+      "evidence": "身体半侧、头小幅回转、目光和嘴唇停顿协同，肩颈放松而非证件照正面。手脚画外不检查不存在的抓握/站立支点；仍检查可见颈肩转动是否自然。"
+    },
+    "proportions_and_position": {
+      "status": "pass",
+      "evidence": "自然眼平近人像透视，头部与颈肩比例协调，不极端扭头或拉长颈部；身体侧向但两眼清楚。"
+    },
+    "shot_scale": {
+      "status": "pass",
+      "evidence": "计划16:9肩上至上胸紧近景，允许发顶少量出框，完整额头五官下颌和颈肩关系必须可见；按实际截幅重新命名，不套用上一张8%留白指标。"
+    },
+    "light_and_color": {
+      "status": "pass",
+      "evidence": "中性银灰、宽柔左前窗光、连续中间调；阴侧眼睛、深发、墙暗部和浅衣细纹须可辨，不压黑脸扮冷。"
+    },
+    "style_identity": {
+      "status": "pass",
+      "evidence": "同时看灰阶体积、眼唇发局部光泽对照哑织物、冷峻克制选角/表演；后者由具体凝视/唇部/头肩关系体现，不从脸形推断真实性格，也不把静态站姿或局部亮泽当整体成功。"
+    }
+  }
+}

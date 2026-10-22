@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "stage": "after",
+  "target": {
+    "file": "runs/silver-six-scenes-20261022/outputs/scene-05/original.png",
+    "sha256": "391bfec88b647f01d9ab2a865cf5ccecba92f789bd91041e0e976af9fffd6d91"
+  },
+  "checks": {
+    "subject_weight_groups": {
+      "status": "pass",
+      "evidence": "左中脸/身躯/摆臂和交叠腿形成一个动态主组；窗柱重复面与右侧走廊构成环境组。"
+    },
+    "balance_mechanism": {
+      "status": "pass",
+      "evidence": "人物较清楚，右侧走廊远端较简洁；柱线和地缝引向身体与足部。右侧空间主要承担建筑纵深，不冒称它就是眼睛的凝视方向。"
+    },
+    "viewing_connections": {
+      "status": "pass",
+      "evidence": "脸向左窗一侧、身体向前；摆臂和前脚可读，地缝/廊柱回引主体。观看方向与行进方向可以不同，并不强迫一致。"
+    },
+    "negative_space": {
+      "status": "pass",
+      "evidence": "右侧走廊延伸建立地点与纵深，留白有功能；左窗较亮，后端亮门有次级竞争。"
+    },
+    "pose_and_support": {
+      "status": "fail",
+      "evidence": "前脚有落地阴影，后脚也近地，臂自然下垂微摆。但双腿交叠较窄，后脚“跟抬、前掌留地”的具体短步阶段不能充分确认。自然步未确认通过，不据此判畸形。"
+    },
+    "proportions_and_position": {
+      "status": "pass",
+      "evidence": "全身无明显重复肢体，直筒裤/机位有拉长视觉感但不足以判骨骼错误；手指小且半蜷，细节不夸称全部可判。"
+    },
+    "shot_scale": {
+      "status": "fail",
+      "evidence": "全身、鞋底完整，人物实际约九成画高，高于计划约四分之三；身周空间与预设不完全一致。"
+    },
+    "light_and_color": {
+      "status": "fail",
+      "evidence": "实际图肤面过渡、暗发束和浅衣纤维仍可辨；严格无彩检查未完全达到：全图均值通道差0.494/255，单像素最大差6/255。数值只证明非严格R=G=B，不是偏色严重程度或审美评分；未调色改图。"
+    },
+    "style_identity": {
+      "status": "pass",
+      "evidence": "灰阶与柔面光、浅衣细纹成立；环境直射斑/亮窗比安静柔光计划强，全身眼唇反射只能粗看。 身份参考未使用；本轮短发是输入方向，不把所有黑白人像固定为这一选角。"
+    }
+  }
+}

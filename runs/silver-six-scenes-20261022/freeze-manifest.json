@@ -1,0 +1,169 @@
+{
+  "frozen_at": "2026-10-22T05:33:38.473422+00:00",
+  "base_commit": "e3a8cf5f8503606584ec4a405d0565228aba5957",
+  "base_version": "0.3.3",
+  "style_version": "0.2.0",
+  "authorized_calls": 6,
+  "mode": "generate",
+  "image_inputs": [],
+  "identity_lock": false,
+  "automatic_new_gates_implemented": false,
+  "files": [
+    {
+      "path": "runs/silver-six-scenes-20261022/inputs/scene-01.json",
+      "sha256": "2e1e673115838869f8020c21967414003cab12404a374f2d82092c830dc4d9ec"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/reviews/scene-01-before.json",
+      "sha256": "1672b53bbdbbe49b886252c860ab40c3cda289a966883fd30e955b89aec33532"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/inputs/scene-01-intent-card.json",
+      "sha256": "379ba7a5bca6e2926e2a95fcfe336f82de47b3c75e6ba7a4f934ab01bb478db4"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/inputs/scene-01-rule-map.md",
+      "sha256": "8d6974a69db0fce53d4c687a12913a1fd8f122ff93e55e6ae3b61a574a8b9a61"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/outputs/scene-01/assembled-prompt.txt",
+      "sha256": "fe2fc37d189fa801547f55141f855916e655541d8cf0e21ad12c408debb98df2"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/outputs/scene-01/prepared-tool-request.json",
+      "sha256": "298a78fc69b4acd1e1d1bbd56aa06b961f3b5e5063d37e6d00f6dddec524f04b"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/inputs/scene-02.json",
+      "sha256": "fb75c3f9c1170cdb0bfa5692d85615985a39b9457587120bdf2e2900ba1a8707"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/reviews/scene-02-before.json",
+      "sha256": "aa74ab3e8352d421757be02b0524e8e934de8ad5d2112670ef01933efc82334b"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/inputs/scene-02-intent-card.json",
+      "sha256": "22d6b285a2b8dc534d0dc175de12b56a8c4c88b5fef66445a80fd12a5b232085"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/inputs/scene-02-rule-map.md",
+      "sha256": "02d74e9f22cb58d954a1b355f117c9725b469844226cdea602bf4b74584c00fd"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/outputs/scene-02/assembled-prompt.txt",
+      "sha256": "329a4753272722a916e656499814f5d0e2ed2cd094ffdcf677008de85a0488c1"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/outputs/scene-02/prepared-tool-request.json",
+      "sha256": "8828150f4feadbe7591c144fffc6ecd30aef35b631a9afcb2a5c3b167e01cc87"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/inputs/scene-03.json",
+      "sha256": "8a6371183b7da1ec3c0823d3907a62e9f441edc6e0f781b3f6c3ea519ce3e139"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/reviews/scene-03-before.json",
+      "sha256": "70a963ba299fe56148347283af35de52d2f0aa47fa56696b4e922018d81bb3b4"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/inputs/scene-03-intent-card.json",
+      "sha256": "8ac6f36b1ddcac0e36d22f4e7063c148721bfac50463aea96860ef0059fd42ff"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/inputs/scene-03-rule-map.md",
+      "sha256": "f016323950e673ca6592fbb5af3ee59eb25aaa0672ee8b45fd8d01ced235dfe5"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/outputs/scene-03/assembled-prompt.txt",
+      "sha256": "7b025579ccc31dc745b73487b6e88cd0bd99681219d822569096c30f17466941"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/outputs/scene-03/prepared-tool-request.json",
+      "sha256": "646921001386bdf45837b3beb87c0057905bb22819c15809f3eb69133ef4878c"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/inputs/scene-04.json",
+      "sha256": "9f58da8e8172e1dc12fbbaaa44a15b2358a84a3b51c5423c30a2c91167a0732e"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/reviews/scene-04-before.json",
+      "sha256": "651bc46afae08b0d653433d79554120b9c6e9363e4e436c512fb87ef0b4e913f"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/inputs/scene-04-intent-card.json",
+      "sha256": "3d953078a007cbbdc7afdf329f795ff70f15726f8e9265c6cae6cae2afc1ba20"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/inputs/scene-04-rule-map.md",
+      "sha256": "7581993ca7b217ab7106a1ae2e998123115469f57d0995a451fb00cdbd09d7c8"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/outputs/scene-04/assembled-prompt.txt",
+      "sha256": "4b9d8f6f81902aa7ead03e8d38961969eb2a857bbbf2cdcc21c178f3ee84c030"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/outputs/scene-04/prepared-tool-request.json",
+      "sha256": "0a1e6584598243bc2e7a150ec8cb655fa3a2a05faf816ccf2572baeac6f58158"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/inputs/scene-05.json",
+      "sha256": "044c496628613a7421cac89fdacdc7c023aedb39eb88add961411ce07d85736e"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/reviews/scene-05-before.json",
+      "sha256": "990068925d76f9793a08af271ef9f15294aedfb22539a4aac7aafb0a18858b57"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/inputs/scene-05-intent-card.json",
+      "sha256": "676072a1dbfd265900eb2b33a6084b452987076f46a129b562f3423b4d3d4729"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/inputs/scene-05-rule-map.md",
+      "sha256": "a770c575fda24ec75698e3cc6e54b40fa0e82e860f33a94238a5482658331fcf"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/outputs/scene-05/assembled-prompt.txt",
+      "sha256": "1b4bff38766cdfb324691323eefcfb563d8234e3ae5e5ee6b65521853c9cdcaf"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/outputs/scene-05/prepared-tool-request.json",
+      "sha256": "0e72a81a39e91964e03c431cd685b577e8c7cf1a4c9a20e9310ebbf6a5a559fc"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/inputs/scene-06.json",
+      "sha256": "583bfb879bc0ab0a73ccf6e0a7f271b5423ba061e02a8a976af404700f72d872"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/reviews/scene-06-before.json",
+      "sha256": "aef7f600b1daad7210b48558886bb7b8e1cd62b3e0b2cc1db93b1974dc779332"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/inputs/scene-06-intent-card.json",
+      "sha256": "53ff243f1aa324b5b6fc30f97044c864db0c873957a0828b71acdf0d8fd41201"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/inputs/scene-06-rule-map.md",
+      "sha256": "f79d344e40b0c2492f8b296aa63d7f10ca082aab6393e1c4f27618a1b47d2eda"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/outputs/scene-06/assembled-prompt.txt",
+      "sha256": "0d7ab1598cd4f260f9f9425a43a723059c1f4057ef23af0ddeae7a68f29cd864"
+    },
+    {
+      "path": "runs/silver-six-scenes-20261022/outputs/scene-06/prepared-tool-request.json",
+      "sha256": "e76c4dbaf63401a6f97734c64ed7f8ef77d54e3f852ca8ec55de2d4cd9b16f04"
+    },
+    {
+      "path": "base-image-production/base.json",
+      "sha256": "dd349aca7c6075f57cd7d358d811e69aae308795bf958f9c7af4a694ccbadd9a"
+    },
+    {
+      "path": "compose_prompt.py",
+      "sha256": "afcc26444355590616c1fbcab70f299f7a58b9cd5d17eee9f37595aa2e6792c8"
+    },
+    {
+      "path": "styles/silver-window-v0.2.json",
+      "sha256": "1e15378235b03d48f4b30c5c72b6b9ec167102eab1646676634305a72db245de"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "style-reference-1",
+  "role_definitions": {
+    "demo": "An example produced by a past run; not automatically a future input.",
+    "style_reference": "Curated own-original image explicitly supplied for style relations only.",
+    "identity_reference": "A separate identity-preserving mode; these manifests do not grant or implement it."
+  },
+  "request_mode_status": "Configured and request-structure tested only; reference-conditioned images have not been generated.",
+  "reference_conditioned_visual_tested": false,
+  "style": {
+    "id": "silver-window",
+    "version": "0.2.0",
+    "base_version": "0.3.3"
+  },
+  "inherit_style_only": [
+    "中性银灰与连续明暗体积关系",
+    "宽柔侧前窗光",
+    "眼唇发局部小亮泽与消光织物的材质对照",
+    "清冷克制的时装表演气质，不推断真实人格"
+  ],
+  "do_not_inherit": [
+    "人物身份和五官",
+    "发型与服装款式",
+    "场景布局与构图",
+    "具体动作与道具"
+  ],
+  "references": [
+    {
+      "id": "close-museum",
+      "file": "runs/silver-six-scenes-20261022/outputs/scene-01/original.png",
+      "sha256": "8dc477cb51c8826b3e894dc9f3f41273a09a1abab377033dce7c81305ec4b5ae",
+      "role": "style_reference",
+      "source_kind": "our_generated_original",
+      "shot_scale": "上胸近景",
+      "provenance": "Own-original silver six-scene text-only run, scene 01.",
+      "limits": "Strict neutral gray has residual channel differences; background strength and hair length have deviations. Not identity-locked."
+    },
+    {
+      "id": "medium-tea",
+      "file": "runs/silver-six-scenes-20261022/outputs/scene-04/original.png",
+      "sha256": "902f7ffb7e8c6b4532b80530e019f42fcc75e2694f1a4f97e8f87f3c2490fa9d",
+      "role": "style_reference",
+      "source_kind": "our_generated_original",
+      "shot_scale": "侧坐中景",
+      "provenance": "Own-original silver six-scene text-only run, scene 04.",
+      "limits": "Cup height and precise gaze deviate; neutral gray has residual differences. Not a universal tea-room composition or identity reference."
+    }
+  ]
+}

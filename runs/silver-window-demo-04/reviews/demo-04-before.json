@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "stage": "before",
+  "target": {
+    "file": "runs/silver-window-demo-04/inputs/demo-04.json",
+    "sha256": "5edc8be496d674e922e3fefd769f0fe5b391de77c6c07faba9a19531293c0e72"
+  },
+  "checks": {
+    "subject_weight_groups": {
+      "status": "pass",
+      "evidence": "短发、脸、颈肩和浅衣是一组，眼唇发高光为组内节奏；无额外道具，不靠存在物件假装平衡。"
+    },
+    "balance_mechanism": {
+      "status": "pass",
+      "evidence": "近中央略右主组以身体轻侧与头回转形成不对称方向，两侧墙面安静退后；不硬加配重，后检按实际画面看是否成立。"
+    },
+    "viewing_connections": {
+      "status": "pass",
+      "evidence": "以对镜平视为首落点，唇部微泽/发束亮带引向领口和肩，头肩方向区别证件照。眼神不能向上飘或圆睁，嘴轻合。"
+    },
+    "negative_space": {
+      "status": "pass",
+      "evidence": "留白承担安定和距离感；上边缘可裁发冠但不得碰额头皮肤和五官，事前明确边界，不沿用旧8%顶空，也不改旧失败记录。"
+    },
+    "pose_and_support": {
+      "status": "pass",
+      "evidence": "身体轻侧、脸回转小幅、下巴微收和肩颈松弛属于同一静止瞬间；只对可见头颈肩核查，不声称检查画外手脚。"
+    },
+    "proportions_and_position": {
+      "status": "pass",
+      "evidence": "自然眼平透视，脸颈肩比例正常，不拉长脖子，不用紧扭、抬肩或放大眼球塑造清冷。"
+    },
+    "shot_scale": {
+      "status": "pass",
+      "evidence": "计划1672比例对应16:9肩上/上胸近景，发冠可出框，额头五官下颌及颈肩必须完整可读；实际景别据原图再判。"
+    },
+    "light_and_color": {
+      "status": "pass",
+      "evidence": "中性无彩黑白为必达要求；灰阶体积连续、暗发和背景暗部可辨、浅衣不过曝。对上一张极轻暖唇/肤色偏差单列目检与必要RGB事实核对。"
+    },
+    "style_identity": {
+      "status": "pass",
+      "evidence": "灰阶体积与眼唇发亮泽对照哑衣双核心必须保留；本次重点实际查看齐耳侧分短发、平视收敛眼睑、轻合唇和松弛头肩能否共同呈现清冷而非愤怒或惊讶，不只检查关键词进入。"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "style-reference-1",
+  "role_definitions": {
+    "demo": "An example produced by a past run; not automatically a future input.",
+    "style_reference": "Curated own-original image explicitly supplied for style relations only.",
+    "identity_reference": "A separate identity-preserving mode; these manifests do not grant or implement it."
+  },
+  "request_mode_status": "Configured and request-structure tested only; reference-conditioned images have not been generated.",
+  "reference_conditioned_visual_tested": false,
+  "style": {
+    "id": "apricot-colonnade",
+    "version": "0.3.3",
+    "base_version": "0.3.3"
+  },
+  "inherit_style_only": [
+    "奶白桃杏与灰绿温木的主辅色关系",
+    "暖侧逆发缘与柔亮脸光",
+    "细腻哑针织与自然肤面材质",
+    "温和亲近的时装生活气氛"
+  ],
+  "do_not_inherit": [
+    "人物身份与脸型",
+    "旧衣服款式",
+    "书店或温室布局",
+    "书册植物与具体动作"
+  ],
+  "coverage_limit": "No native close-up reference is included; do not crop these images and present them as a native close-up.",
+  "references": [
+    {
+      "id": "bookshop-medium",
+      "file": "style-reference-assets/apricot/bookshop-medium.png",
+      "sha256": "9c8ece91cbee466a85d0df67c8eb960809ce009e2edbf17a0d69c56aece24fe7",
+      "role": "style_reference",
+      "source_kind": "our_generated_original",
+      "shot_scale": "原生膝上中景",
+      "provenance": "Own-original apricot six-scene run, scene 01; overall style direction accepted.",
+      "limits": "Not a close-up; specific book, clothing, person and bookstore layout are not fixed style requirements."
+    },
+    {
+      "id": "greenhouse-seated",
+      "file": "style-reference-assets/apricot/greenhouse-seated-environment.png",
+      "sha256": "d96b407273b9d46765d184a74d37a70b62a32ee7ce365236c56e681211d76e00",
+      "role": "style_reference",
+      "source_kind": "our_generated_original",
+      "shot_scale": "完整坐姿环境景",
+      "provenance": "Own-original apricot six-scene run, scene 06; overall style direction accepted.",
+      "limits": "Not a close-up; plants, greenhouse layout, seated pose, face and clothes must not be locked into new inputs."
+    }
+  ]
+}
