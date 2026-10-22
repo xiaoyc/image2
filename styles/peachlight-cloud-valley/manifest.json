@@ -1,0 +1,106 @@
+{
+  "execution": "manual prompts submitted to native imagegen; not compiler outputs",
+  "image_count": 7,
+  "baseline_count": 1,
+  "new_testcase_count": 6,
+  "competitor_images_included": false,
+  "files": [
+    {
+      "path": "QA.md",
+      "bytes": 2688,
+      "sha256": "82af23bb87b40c6aa6b254e37aef41f5a894c6554a30331d0a4804e463895806"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1536,
+      "sha256": "775fb9445d4c8d5c7d6e20301afff3848ef5b87b5c731a72f542d9c8bc46c6d2"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 5684,
+      "sha256": "1d89282f80738d6c1d1e153b099b51a7a1e9ac4efcdf739c7cd2fe3f5ad28198"
+    },
+    {
+      "path": "SOURCES-AND-LICENSE.md",
+      "bytes": 953,
+      "sha256": "a7b751c0119e34b575977114836295e98fb80dfb20439f6363e3a18400368f35"
+    },
+    {
+      "path": "baseline/accepted-demo02.png",
+      "bytes": 2543654,
+      "sha256": "686c9a4ebdee64617886825254fdf3e9ef01289cf9d2e9cbbc1854076bfa3857"
+    },
+    {
+      "path": "baseline/actual-prompt.txt",
+      "bytes": 2604,
+      "sha256": "bb9f9a866c0889dd45d5c9c8fb9fa960a047d74d3d2c9600047cde0381315025"
+    },
+    {
+      "path": "examples/01_actual_prompt.txt",
+      "bytes": 1652,
+      "sha256": "6dd2f7daad3ea14aced04dcde0d4b5b459149956d0ae8cc1e186d8a36d0b9e1d"
+    },
+    {
+      "path": "examples/01_窗边倾听_特写.png",
+      "bytes": 2238700,
+      "sha256": "00713af95b56fa52776873f6144c77e8590ffd017bcd3f21e4eb3fa2accb5f88"
+    },
+    {
+      "path": "examples/02_actual_prompt.txt",
+      "bytes": 1679,
+      "sha256": "a31d01a0109d052b3a60e2f3e25758b648851f5fdf1d9eabfcabf9d4bc61af4a"
+    },
+    {
+      "path": "examples/02_拈花回望_近景.png",
+      "bytes": 2537761,
+      "sha256": "39e7a3378b04f23155e83978ced719d36a35c50b84578405ba610174d3e5e8d8"
+    },
+    {
+      "path": "examples/03_卷帘纳光.png",
+      "bytes": 2756909,
+      "sha256": "765a836363d8705cb75e0e7274848c93922775602bbf8018ad1bcecce7713196"
+    },
+    {
+      "path": "examples/03_卷帘纳光_实际提示词.txt",
+      "bytes": 2940,
+      "sha256": "7c96f05517dbdd65d5949e0b2f9462effbe96a0155a2480cac7d75afaa55cd3f"
+    },
+    {
+      "path": "examples/04_泊舟登岸.png",
+      "bytes": 2853683,
+      "sha256": "6ed03fa88d7e77cfa1262b78640d3265ea216a72afb52a275d46ea15a104f044"
+    },
+    {
+      "path": "examples/04_泊舟登岸_实际提示词.txt",
+      "bytes": 3388,
+      "sha256": "22b9ae9f9c34eb8cf614b1599b96a9cb492151962f856b152fc162a9766bca36"
+    },
+    {
+      "path": "examples/05_春谷过桥_实际提示词.txt",
+      "bytes": 2751,
+      "sha256": "dabccff8950a3d08aa2e5bde64f570c5b5b51f2e5da4c2b2f4b0deaf19184536"
+    },
+    {
+      "path": "examples/05_春谷过桥_远景.png",
+      "bytes": 3677538,
+      "sha256": "e63799ab759f83efc4d70e9eb2bee5fd798eb43af3007646a27315799abf6a13"
+    },
+    {
+      "path": "examples/06_沿坡归居_实际提示词.txt",
+      "bytes": 3433,
+      "sha256": "b59aecca7b01bcee6e87b53c7c7403b4197d0677cdf04948fa238c2b8e9f58a2"
+    },
+    {
+      "path": "examples/06_沿坡归居_远景.png",
+      "bytes": 3396241,
+      "sha256": "d3f7ff721d89cb07048f7823c39f4604cd4b94e552143b342ecf0794a56a07d2"
+    }
+  ],
+  "baseline_status": "explicit positive aesthetic feedback",
+  "new_testcase_status": "exploration samples; not individually approved",
+  "dimensions": {
+    "width": 1672,
+    "height": 941,
+    "ratio_exact_16_9": false
+  }
+}

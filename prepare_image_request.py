@@ -4,6 +4,7 @@ import hashlib
 import json
 from pathlib import Path
 import re
+from base_constraints import checked_scope, check_skin, skin_contract
 
 ROOT = Path(__file__).resolve().parent
 TEXT_OPENING = "只生成一张完整原创成片，不做拼图或联系表。本次没有任何参考图输入。"
@@ -41,13 +42,41 @@ def checked_reference(item, root):
     return path
 
 
-def prepare_request(prompt, mode="text", manifest=None, package_root=ROOT, reference_ids=None, assembly=None):
+def request_skin_scope(prompt, assembly, skin_scope):
+    """Require reviewed scope; current assemblies carry a byte-bound base contract.
+
+    Legacy text replay remains unchanged. Preparing a new request from legacy or
+    handwritten text requires explicit scope and the same final-prompt checks.
+    This does not prove the declaration or recognize all possible prose conflicts.
+    """
+    if assembly is not None:
+        if not isinstance(assembly, dict):
+            raise ValueError("assembly must be an object")
+        if assembly.get("prompt_sha256") != hashlib.sha256(prompt.encode("utf-8")).hexdigest():
+            raise ValueError("assembly prompt SHA256 mismatch")
+    bound = assembly.get("skin_constraint") if assembly else None
+    if bound is not None:
+        if not isinstance(bound, dict):
+            raise ValueError("assembly skin constraint must be an object")
+        expected = skin_contract(bound.get("scope"))
+        if json.dumps(bound, sort_keys=True) != json.dumps(expected, sort_keys=True):
+            raise ValueError("assembly mandatory skin constraint is stale or overridden")
+        if skin_scope is not None and checked_scope(skin_scope) != bound["scope"]:
+            raise ValueError("explicit skin scope conflicts with assembly")
+        skin_scope = bound["scope"]
+    scope = checked_scope(skin_scope)
+    check_skin(prompt, scope)
+    return scope
+
+
+def prepare_request(prompt, mode="text", manifest=None, package_root=ROOT, reference_ids=None, assembly=None, skin_scope=None):
     """Return only actual imagegen kwargs. SHA checks byte identity, not ownership or beauty."""
     nonempty_text(prompt, "prompt")
     if not (prompt == TEXT_OPENING or prompt.startswith(TEXT_OPENING + "\n")):
         raise ValueError("use a generate-mode prompt from compose_prompt.py, not edit or identity_reference")
     if mode not in {"text", "style-reference"}:
         raise ValueError("mode must be text or style-reference")
+    scope = request_skin_scope(prompt, assembly, skin_scope)
     request = {"prompt": prompt, "transparent_background": False}
     if mode == "text":
         if manifest is not None or reference_ids:
@@ -70,10 +99,10 @@ def prepare_request(prompt, mode="text", manifest=None, package_root=ROOT, refer
         raise ValueError("reference manifest style/base versions do not match this assembly")
     if assembly.get("prompt_sha256") != hashlib.sha256(prompt.encode("utf-8")).hexdigest():
         raise ValueError("assembly prompt SHA256 mismatch")
-    scope = manifest.get("inherit_style_only")
-    if not isinstance(scope, list) or not scope:
+    style_scope = manifest.get("inherit_style_only")
+    if not isinstance(style_scope, list) or not style_scope:
         raise ValueError("manifest must declare a non-empty style-only scope")
-    for entry in scope:
+    for entry in style_scope:
         nonempty_text(entry, "inherit_style_only entry")
     references = manifest.get("references")
     if not isinstance(references, list) or not 1 <= len(references) <= 5:
@@ -91,11 +120,12 @@ def prepare_request(prompt, mode="text", manifest=None, package_root=ROOT, refer
     body = prompt[len(TEXT_OPENING):].lstrip("\n")
     request["prompt"] = "\n".join([
         REFERENCE_OPENING,
-        "仅继承的风格关系：" + "；".join(scope) + "。",
+        "仅继承的风格关系：" + "；".join(style_scope) + "。",
         RELEASE,
         body,
     ])
     request["referenced_image_paths"] = [str(checked[key]) for key in selected]
+    check_skin(request["prompt"], scope)  # Re-check added reference instructions, not just the original body.
     return request
 
 
@@ -106,12 +136,19 @@ def main():
     parser.add_argument("--manifest", help="Curated own-original style-reference manifest")
     parser.add_argument("--assembly-manifest", help="Required in style-reference mode; binds prompt and declared style/base versions")
     parser.add_argument("--reference-id", action="append", dest="reference_ids", help="Optional subset; repeat for multiple IDs")
+    parser.add_argument("--rendering-medium", choices=("photoreal", "non_photoreal"), help="Explicit reviewed scope for legacy/handwritten prompts")
+    parser.add_argument("--visible-humans", choices=("yes", "no"), help="Whether people are visible; not inferred from keywords")
     parser.add_argument("--out", required=True, help="Write request JSON under an ignored build directory")
     args = parser.parse_args()
     try:
         manifest = json.loads(Path(args.manifest).read_text(encoding="utf-8")) if args.manifest else None
         assembly = json.loads(Path(args.assembly_manifest).read_text(encoding="utf-8")) if args.assembly_manifest else None
-        request = prepare_request(Path(args.prompt).read_text(encoding="utf-8"), args.mode, manifest, ROOT, args.reference_ids, assembly)
+        scope = None
+        if args.rendering_medium is not None or args.visible_humans is not None:
+            if args.rendering_medium is None or args.visible_humans is None:
+                raise ValueError("supply both --rendering-medium and --visible-humans")
+            scope = {"rendering_medium": args.rendering_medium, "visible_humans": args.visible_humans == "yes"}
+        request = prepare_request(Path(args.prompt).read_text(encoding="utf-8"), args.mode, manifest, ROOT, args.reference_ids, assembly, scope)
         out = Path(args.out)
         out.parent.mkdir(parents=True, exist_ok=True)
         with out.open("x", encoding="utf-8") as handle:

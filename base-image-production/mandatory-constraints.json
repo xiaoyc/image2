@@ -1,0 +1,11 @@
+{
+  "schema_version": "base-constraints-1",
+  "rules": [
+    {
+      "id": "PHOTO-SKIN-001",
+      "sentence": "保留自然纹理，不过度磨皮",
+      "when": {"rendering_medium": "photoreal", "visible_humans": true},
+      "overridable": false
+    }
+  ]
+}

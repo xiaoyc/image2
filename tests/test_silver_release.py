@@ -144,11 +144,11 @@ class SilverReleaseTests(unittest.TestCase):
             manifest = read(ROOT / path)
             self.assertFalse(manifest["reference_conditioned_visual_tested"])
             self.assertEqual(len(manifest["references"]), 2)
-            prompt = TEXT_OPENING + "\n本次是仅用于请求结构检查的原创成年人物说明。"
+            prompt = TEXT_OPENING + "\n本次是仅用于请求结构检查的原创成年人物说明。保留自然纹理，不过度磨皮。"
             assembly = {"mode": "generate", "input_images": [], "style": manifest["style"],
                         "base": {"version": manifest["style"]["base_version"]},
                         "prompt_sha256": hashlib.sha256(prompt.encode()).hexdigest()}
-            request = prepare_request(prompt, "style-reference", manifest, ROOT, assembly=assembly)
+            request = prepare_request(prompt, "style-reference", manifest, ROOT, assembly=assembly, skin_scope={"rendering_medium":"photoreal", "visible_humans":True})
             self.assertEqual(len(request["referenced_image_paths"]), 2)
             self.assertTrue(all(Path(p).is_file() for p in request["referenced_image_paths"]))
             self.assertNotIn("没有任何参考图输入", request["prompt"])

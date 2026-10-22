@@ -13,10 +13,14 @@
 
 两套都不锁人物、旧衣服、场景布局、道具或动作。参考图中的书店、温室、茶杯不是以后必选的场景或物件。具体局限保留于 manifest，用户整体接受不代表每张完全满足全部输入。
 
+## 新请求迁移
+
+旧编译器和历史实际请求不改。新的请求须按[自然肤质约束](natural-skin.md)制作包含原句的本次输入及对应 before 记录，再编译到 build/current；适配器现在要求显式范围。下列参考命令针对这个新的 assembly，不是旧图历史请求的重放。
+
 ## 显式银灰参考请求
-先按[银灰入口](silver-release.md)编译新的纯文本预览，再运行：
+先按上述迁移说明编译新的银灰输入，再运行：
 ```sh
-python3 -B prepare_image_request.py --prompt build/silver-preview/assembled-prompt.txt --mode style-reference --assembly-manifest build/silver-preview/assembly-manifest.json --manifest styles/silver-window-v0.2/references.json --reference-id close-museum --reference-id medium-tea --out build/silver-style-reference-request.json
+python3 -B prepare_image_request.py --prompt build/current/assembled-prompt.txt --rendering-medium photoreal --visible-humans yes --mode style-reference --assembly-manifest build/current/assembly-manifest.json --manifest styles/silver-window-v0.2/references.json --reference-id close-museum --reference-id medium-tea --out build/silver-style-reference-request.json
 ```
 可省略 reference-id 使用清单全部图，或只选需要的图。输出的是适配器运行机器上的已验证本地路径；不得把旧机器上的请求 JSON 直接搬到另一执行环境。应在真正消费图片的环境重新准备，并实际查看所选图片。
 
@@ -29,7 +33,8 @@ python3 -B prepare_image_request.py --prompt build/silver-preview/assembled-prom
 下面只复用已接受六场景实验的书店文字输入，before 的目标路径已为本仓库重新定位，输入字节保持不变；不是新生图记录。命令从仓库根目录运行：
 ```sh
 python3 -B compose_prompt.py --base base-image-production/base.json --style styles/apricot-colonnade.json --input examples/request-preparation/apricot-input.json --review examples/request-preparation/apricot-before.json --out build/apricot-reference-preview
-python3 -B prepare_image_request.py --prompt build/apricot-reference-preview/assembled-prompt.txt --mode style-reference --assembly-manifest build/apricot-reference-preview/assembly-manifest.json --manifest styles/apricot-colonnade/references.json --out build/apricot-style-reference-request.json
+# 上一条仅历史重放；另按迁移说明准备本次含原句的新输入并编译到 build/current 后：
+python3 -B prepare_image_request.py --prompt build/current/assembled-prompt.txt --rendering-medium photoreal --visible-humans yes --mode style-reference --assembly-manifest build/current/assembly-manifest.json --manifest styles/apricot-colonnade/references.json --out build/apricot-style-reference-request.json
 ```
 两套都必须显式提供对应assembly manifest，不从prompt猜风格。银灰prompt不能误接奶杏清单。适配器还拒绝覆盖任何已有输出文件，以免误写历史实际请求；再次准备请使用新的输出文件名。
 

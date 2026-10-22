@@ -16,7 +16,9 @@
 ```sh
 python3 -B -m unittest discover -v
 python3 -B compose_prompt.py --base base-image-production/base.json --style styles/silver-window-v0.2.json --input runs/silver-six-scenes-20261022/inputs/scene-01.json --review runs/silver-six-scenes-20261022/reviews/scene-01-before.json --out build/silver-preview
-python3 -B prepare_image_request.py --prompt build/silver-preview/assembled-prompt.txt --out build/silver-text-request.json
+# 上一条是历史文本重放，不直接作为新的请求。
+# 按 docs/natural-skin.md 准备并编译含原句的本次新输入后：
+python3 -B prepare_image_request.py --prompt build/current/assembled-prompt.txt --assembly-manifest build/current/assembly-manifest.json --rendering-medium photoreal --visible-humans yes --out build/current-text-request.json
 ```
 Python 3.10+，仅标准库，无网络或付费 API 调用。最后一步只准备真实工具参数 JSON，不执行图像生成。prompt 与公开的历史纯文本调用可逐字节回放。
 

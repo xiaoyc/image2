@@ -9,6 +9,14 @@ metadata:
 
 这是项目内可阅读、可离线组装的 Skill 源文件，未自动安装到个人 Skill 系统。沿用基础加风格的两层结构，不引入复杂框架。
 
+## 写实人物的基础皮肤约束
+
+写实媒介且有人物可见时，最终提示词必须逐字包含：**保留自然纹理，不过度磨皮**。风格摘要、输入或文字压缩不得删除、弱化或用无毛孔、喷枪磨皮等相反要求覆盖。按人物年龄表现自然肌理，不强加皱纹或夸张毛孔。
+
+策略文件为 [mandatory-constraints.json](mandatory-constraints.json)，规则 PHOTO-SKIN-001。新增 skin_guard.py、base_constraints.py 与 prepare_image_request.py 的最终请求检查；必须如实声明 rendering_medium 和 visible_humans。检查仅覆盖有限中英文短语和局部否定，不是完整语义理解，也不检查成片像素。
+
+本次不修改 base.json 或 compose_prompt.py，也不发布新的 Preflight 编译入口。旧编译器仍可逐字节重放历史，但不会自动注入本句；新输入必须主动包含本句并在实际调用前复核。旧图片、实际提示词和请求记录不追溯改写。手写提示词用 check_skin 检查；适配器仅支持其既有 generate-mode 开头和显式范围。迁移方法见[自然肤质请求说明](../docs/natural-skin.md)。这不是生成调用，也不是用户审美验收。
+
 ## 责任边界
 
 - [base.json](base.json) 只维护通用方法：注意力层级、大中小和疏密节奏、视觉路径、主体与动作及辅助物的关系、光线、材质、物理、解剖、可见眼睛与审片方法。不得写入某个地点、建筑、服装或固定色彩。
