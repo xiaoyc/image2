@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "stage": "after",
+  "target": {
+    "file": "examples/series-004-r3.png",
+    "sha256": "d363a79b060a0cfbcd3f4979ac0aaa6c5693336376be050623932a210378c728"
+  },
+  "checks": {
+    "subject_weight_groups": {
+      "status": "pass",
+      "evidence": "主角浅衣/深发组仍为主，左盆体与右木椅保持辅重量，远桌双人位置基本不变；抬起的画册与手形成一个相连小组。"
+    },
+    "balance_mechanism": {
+      "status": "pass",
+      "evidence": "人物小幅向椅靠近而非换边，左前盆、左后桌和右椅仍有空间分工；没有额外增加平衡道具。"
+    },
+    "viewing_connections": {
+      "status": "pass",
+      "evidence": "视线落向持册位置，经弯曲手臂到已离座的画册，原座面空出；书不再只是平放且手指邻接。封面较朝镜头，留展示感风险。"
+    },
+    "negative_space": {
+      "status": "pass",
+      "evidence": "原通路、桌前空地和鞋前空间保留，层次未因动作编辑堆物或抹平，原书位置空出。"
+    },
+    "pose_and_support": {
+      "status": "pass",
+      "evidence": "手边夹持画册可读，册离开座面，肘屈曲回收且身体较靠近椅、侧倾收敛，动作阶段成立；未见明确穿插。画面左脚仍脚尖/抬跟姿态，头颈精致低垂，属于自然度残余风险，不据此虚构畸形，也不声称完全抓拍。"
+    },
+    "proportions_and_position": {
+      "status": "pass",
+      "evidence": "头身、臂长和人物相对椅体尺度基本保持，双脚位置略变化，未见可靠证据表明新增拉伸。"
+    },
+    "shot_scale": {
+      "status": "pass",
+      "evidence": "1672×941原生横版，头脚完整全身环境景，未裁切，仍与参考04同组。"
+    },
+    "light_and_color": {
+      "status": "pass",
+      "evidence": "柔亮脸、暖发缘、奶白桃杏针织、灰绿与温木基本延续；远景/前景虚实与原图近似。"
+    },
+    "style_identity": {
+      "status": "pass",
+      "evidence": "脸型五官、深发和整套针织裙鞋基本保持，环境没有重置；现有风格特色延续，用户尚未验收自然度。"
+    }
+  }
+}

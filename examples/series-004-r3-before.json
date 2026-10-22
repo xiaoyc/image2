@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "stage": "before",
+  "target": {
+    "file": "inputs/series-004-r3.json",
+    "sha256": "85d6bc5fe9756a70d6c0699978795f41356e4b59e529a35457ec8f55f667062a"
+  },
+  "checks": {
+    "subject_weight_groups": {
+      "status": "pass",
+      "evidence": "环境全部冻结，原主角浅衣/脸组、右木椅组、左盆体与远桌组关系保留；书从座面离开后并入人物手部组，不凭新物件凑平衡。"
+    },
+    "balance_mechanism": {
+      "status": "pass",
+      "evidence": "沿用r2已有不对称平衡，主角只向椅小半步，不换边、不改变尺度、不大幅遮住远桌和通道。"
+    },
+    "viewing_connections": {
+      "status": "pass",
+      "evidence": "动作明确到已拿离座面数厘米并开始屈肘收回，手指真实夹托书脊，目光随持册接触点；不再把手书邻接当成完成动作。"
+    },
+    "negative_space": {
+      "status": "pass",
+      "evidence": "原通路和鞋前空间不变，拿起后的原座面留空，不能复制第二册填空；环境不重新丰富。"
+    },
+    "pose_and_support": {
+      "status": "pass",
+      "evidence": "靠近与承重、自然屈肘、握持受力和目光是同一动作，放开旧展示侧倾与前后脚硬摆；空闲手允许自然，无需额外道具。 全身链条协调，册刚离座、不越过或穿过扶手。"
+    },
+    "proportions_and_position": {
+      "status": "pass",
+      "evidence": "人物尺度和自然头身固定，改变关节/小幅站位不延长手臂；双脚不跨夸张步，正常臂展够得到原册。"
+    },
+    "shot_scale": {
+      "status": "pass",
+      "evidence": "原16:9头脚完整全身环境景不改，不移动镜头或裁切。"
+    },
+    "light_and_color": {
+      "status": "pass",
+      "evidence": "所有光源、暖发缘、柔脸光、奶白桃杏灰绿木色以及前后清晰度冻结，衣纹仅随动作变形。"
+    },
+    "style_identity": {
+      "status": "pass",
+      "evidence": "输入仅最新我方r2，保留同脸发型衣装与环境特色，动作专注自然而非摆拍；不是换人或纯文本稳定性实验。"
+    }
+  }
+}
